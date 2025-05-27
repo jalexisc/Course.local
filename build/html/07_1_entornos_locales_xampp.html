@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7.1 Fundamentos y Configuración de Entornos Locales (XAMPP) &mdash; documentación de Higgs - 7.0.2</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=67a8c293" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/css/citheme.css" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="canonical" href="https://higgs.com.co/07_1_entornos_locales_xampp.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=e20d7d46"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=efdbd0b9"></script>
+        <script src="_static/js/citheme.js"></script>
+        <script src="_static/js/carbon.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="7.2 Fundamentos y Uso de Entornos de Prueba Remotos (ByetHost)" href="07_2_entornos_remotos_byethost.html" />
+    <link rel="prev" title="Capítulo 7: Entornos de Pruebas" href="07_entornos_pruebas.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logotipo"/>
+          </a>
+              <div class="version">
+                7.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="00_introduccion.html">Curso Completo de PHP desde Cero</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#informacion-del-curso">Información del Curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#objetivos-del-curso">Objetivos del Curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#metodologia">Metodología</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="01_introduccion_programacion_php.html">MÓDULO 1: Introducción a la Programación y PHP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_introduccion_programacion_php.html#semana-1-fundamentos-de-programacion">Semana 1: Fundamentos de Programación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_1_que_es_programacion.html">1.1 ¿Qué es la Programación?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="01_1_que_es_programacion.html#conceptos-fundamentales-en-programacion">Conceptos Fundamentales en Programación:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="01_2_introduccion_php.html">1.2 Introducción a PHP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="01_2_introduccion_php.html#caracteristicas-clave-de-php">Características Clave de PHP:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="01_2_introduccion_php.html#casos-de-uso-comunes-de-php">Casos de Uso Comunes de PHP:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="01_3_configuracion_entorno.html">1.3 Configuración del Entorno de Desarrollo Local</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="01_3_configuracion_entorno.html#opciones-de-entornos-de-desarrollo-integrados-stacks">Opciones de Entornos de Desarrollo Integrados (Stacks):</a></li>
+<li class="toctree-l4"><a class="reference internal" href="01_3_configuracion_entorno.html#estructura-de-directorios-tipica-ejemplo-xampp-en-windows">Estructura de Directorios Típica (Ejemplo XAMPP en Windows):</a></li>
+<li class="toctree-l4"><a class="reference internal" href="01_3_configuracion_entorno.html#editores-de-codigo-y-entornos-de-desarrollo-integrados-ides">Editores de Código y Entornos de Desarrollo Integrados (IDEs):</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="01_4_primer_script_php.html">1.4 Tu Primer Script PHP: «Hola, Mundo»</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="01_4_primer_script_php.html#pasos-para-crear-y-ejecutar-el-script">Pasos para crear y ejecutar el script:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="01_4_primer_script_php.html#anatomia-de-un-script-php-basico">Anatomía de un Script PHP Básico:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_variables_tipos_datos.html">MÓDULO 2: Variables y Tipos de Datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_variables_tipos_datos.html#semana-2-trabajando-con-datos">Semana 2: Trabajando con Datos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#variables-en-php">2.1 Variables en PHP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_variables_tipos_datos.html#reglas-para-variables">Reglas para Variables:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#tipos-de-datos">2.2 Tipos de Datos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_variables_tipos_datos.html#tipos-primitivos">Tipos Primitivos:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#operaciones-con-variables">2.3 Operaciones con Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_variables_tipos_datos.html#concatenacion-de-strings">Concatenación de Strings:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_variables_tipos_datos.html#interpolacion-de-variables">Interpolación de Variables:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#constantes">2.4 Constantes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#conversion-de-tipos">2.5 Conversión de Tipos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#ejercicios-semana-2">Ejercicios Semana 2:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_arrays_funciones.html">MÓDULO 4: Arrays y Funciones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#semana-4-organizando-y-reutilizando-codigo">Semana 4: Organizando y Reutilizando Código</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#arrays-arreglos">4.1 Arrays (Arreglos)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#arrays-indexados">Arrays Indexados:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#arrays-asociativos">Arrays Asociativos:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#arrays-multidimensionales">Arrays Multidimensionales:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#operaciones-con-arrays">4.2 Operaciones con Arrays</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#agregar-elementos">Agregar Elementos:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#recorrer-arrays">Recorrer Arrays:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#funciones-utiles-para-arrays">4.3 Funciones Útiles para Arrays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#funciones-definidas-por-el-usuario">4.4 Funciones Definidas por el Usuario</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#funcion-basica">Función Básica:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#funciones-con-parametros">Funciones con Parámetros:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#funciones-que-retornan-valores">Funciones que Retornan Valores:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04_arrays_funciones.html#funciones-con-arrays">Funciones con Arrays:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#alcance-de-variables-scope">4.5 Alcance de Variables (Scope)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#ejercicios-semana-4">Ejercicios Semana 4:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_manipulacion_formularios.html">MÓDULO 5: Manipulación de Formularios</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#semana-5-interaccion-con-el-usuario">Semana 5: Interacción con el Usuario</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#fundamentos-de-formularios-html">5.1 Fundamentos de Formularios HTML</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#formulario-basico">Formulario Básico:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#procesamiento-con-php">5.2 Procesamiento con PHP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#archivo-procesar-php">Archivo procesar.php:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#metodos-get-y-post">5.3 Métodos GET y POST</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#metodo-get">Método GET:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#metodo-post-recomendado-para-formularios">Método POST (Recomendado para formularios):</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#validacion-de-formularios">5.4 Validación de Formularios</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#validacion-basica">Validación Básica:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#formulario-completo-con-validacion">5.5 Formulario Completo con Validación</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#registro-php">registro.php:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#tipos-de-input-avanzados">5.6 Tipos de Input Avanzados</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#ejercicios-semana-5">Ejercicios Semana 5:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06_manejo_archivos_sesiones.html">MÓDULO 6: Manejo de Archivos y Sesiones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="06_manejo_archivos_sesiones.html#semana-6-persistencia-de-datos">Semana 6: Persistencia de Datos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#manipulacion-de-archivos">6.1 Manipulación de Archivos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="06_manejo_archivos_sesiones.html#leer-archivos">Leer Archivos:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06_manejo_archivos_sesiones.html#escribir-archivos">Escribir Archivos:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#sistema-de-registro-de-usuarios">6.2 Sistema de Registro de Usuarios</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="06_manejo_archivos_sesiones.html#registro-archivo-php">registro_archivo.php:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="07_entornos_pruebas.html">Capítulo 7: Entornos de Pruebas</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="07_entornos_pruebas.html#que-es-un-entorno-de-pruebas">¿Qué es un Entorno de Pruebas?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="07_entornos_pruebas.html#caracteristicas-clave-de-un-buen-entorno-de-pruebas">Características Clave de un Buen Entorno de Pruebas:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="07_entornos_pruebas.html#utilidad-y-necesidad-de-los-entornos-de-pruebas">Utilidad y Necesidad de los Entornos de Pruebas</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="07_entornos_pruebas.html#como-los-entornos-de-pruebas-te-preparan-para-la-programacion-real">Cómo los Entornos de Pruebas te Preparan para la Programación Real</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">7.1 Fundamentos y Configuración de Entornos Locales (XAMPP)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#instalacion-detallada-y-configuracion-de-xampp">Instalación Detallada y Configuración de XAMPP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="07_2_entornos_remotos_byethost.html">7.2 Fundamentos y Uso de Entornos de Prueba Remotos (ByetHost)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="07_2_entornos_remotos_byethost.html#pruebas-en-entorno-remoto-con-byethost-o-similar">Pruebas en Entorno Remoto con ByetHost (o similar)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Higgs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="07_entornos_pruebas.html">Capítulo 7: Entornos de Pruebas</a></li>
+      <li class="breadcrumb-item active">7.1 Fundamentos y Configuración de Entornos Locales (XAMPP)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fundamentos-y-configuracion-de-entornos-locales-xampp">
+<h1>7.1 Fundamentos y Configuración de Entornos Locales (XAMPP)<a class="headerlink" href="#fundamentos-y-configuracion-de-entornos-locales-xampp" title="Link to this heading"></a></h1>
+<p>Cuando hablamos de un <strong>entorno de desarrollo local</strong> (o simplemente «entorno local»), nos referimos a una configuración de software instalada y ejecutándose directamente en tu propia computadora personal (sea laptop o de escritorio). Este entorno simula el comportamiento de un servidor web real, pero opera de forma completamente autónoma y privada en tu máquina, sin necesidad de una conexión a Internet para acceder a las aplicaciones que desarrollas en él (a menos que la aplicación misma requiera servicios externos).</p>
+<p><strong>Ventajas Clave de un Entorno Local:</strong></p>
+<ul class="simple">
+<li><p><strong>Autonomía y Control Total:</strong> Tienes control completo sobre la configuración del servidor web (Apache, Nginx), la versión de PHP, el sistema de base de datos (MySQL/MariaDB), y todas las extensiones y herramientas asociadas. Puedes instalar, modificar y experimentar sin afectar a nadie más.</p></li>
+<li><p><strong>Velocidad de Desarrollo:</strong> Al ejecutarse en tu propia máquina, la respuesta es inmediata. No hay latencia de red al cargar páginas o ejecutar scripts, lo que agiliza enormemente el ciclo de desarrollo: codificar, probar, depurar.</p></li>
+<li><p><strong>Desarrollo Offline:</strong> Puedes seguir trabajando en tus proyectos incluso sin conexión a Internet.</p></li>
+<li><p><strong>Costo Cero (Generalmente):</strong> La mayoría de las herramientas para crear entornos locales (como XAMPP) son gratuitas y de código abierto.</p></li>
+<li><p><strong>Seguridad para Experimentar:</strong> Puedes probar código nuevo, experimentar con configuraciones arriesgadas o incluso cometer errores graves sin temor a romper un servidor en vivo o afectar datos de producción. Es un «sandbox» (caja de arena) seguro.</p></li>
+</ul>
+<p>En esta sección, nos centraremos en <strong>XAMPP</strong>, una de las herramientas más populares y sencillas para establecer rápidamente un entorno de desarrollo local completo para PHP. XAMPP agrupa todos los componentes necesarios (Apache, MariaDB, PHP, Perl) en un único paquete fácil de instalar.</p>
+<section id="instalacion-detallada-y-configuracion-de-xampp">
+<h2>Instalación Detallada y Configuración de XAMPP<a class="headerlink" href="#instalacion-detallada-y-configuracion-de-xampp" title="Link to this heading"></a></h2>
+<p>XAMPP es una de las formas más populares y sencillas de instalar un stack completo de Apache, MariaDB, PHP y Perl en tu sistema local. Aunque la instalación básica es directa, algunos detalles y configuraciones adicionales pueden optimizar tu flujo de trabajo.</p>
+<section id="requisitos-previos">
+<h3>Requisitos Previos:<a class="headerlink" href="#requisitos-previos" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Sistema Operativo: Windows, Linux o macOS.</p></li>
+<li><p>Privilegios de administrador para la instalación.</p></li>
+<li><p>Desactivar temporalmente el software antivirus si causa problemas durante la instalación (poco común).</p></li>
+<li><p>Asegurarse de que no haya otros servicios utilizando los puertos por defecto de Apache (80, 443) o MySQL (3306), como otra instancia de Apache, IIS, Skype, etc.</p></li>
+</ul>
+</section>
+<section id="pasos-detallados-de-instalacion-windows">
+<h3>Pasos Detallados de Instalación (Windows):<a class="headerlink" href="#pasos-detallados-de-instalacion-windows" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p><strong>Descarga del Instalador:</strong>
+-   Visita la <a class="reference external" href="https://www.apachefriends.org/index.html">página oficial de descargas de Apache Friends</a>.
+-   Descarga la versión de XAMPP para tu sistema operativo. Se recomienda descargar la versión más reciente que incluya una versión estable y moderna de PHP (e.g., PHP 8.x).</p></li>
+<li><p><strong>Ejecución del Instalador:</strong>
+-   Una vez descargado, ejecuta el archivo instalador (e.g., <code class="docutils literal notranslate"><span class="pre">xampp-windows-x64-8.x.x-0-VS16-installer.exe</span></code>).
+-   <strong>Control de Cuentas de Usuario (UAC):</strong> Si el UAC de Windows está activo, podría mostrar una advertencia sobre permisos. Es recomendable no instalar XAMPP en <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files\</span></code> debido a restricciones de escritura. El instalador usualmente sugiere <code class="docutils literal notranslate"><span class="pre">C:\xampp</span></code> por defecto, lo cual es una buena opción. Haz clic en «OK» si aparece esta advertencia.
+-   <strong>Componentes a Instalar:</strong> El asistente te permitirá seleccionar los componentes. Como mínimo, asegúrate de que estén seleccionados:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Apache (Servidor Web)</p></li>
+<li><p>MySQL (o MariaDB, que es el SGBD incluido)</p></li>
+<li><p>PHP (Lenguaje de scripting)</p></li>
+<li><p>phpMyAdmin (Herramienta web para administrar bases de datos MySQL/MariaDB)</p></li>
+</ul>
+<p>Otros componentes como Fake Sendmail, Webalizer, Tomcat, Perl, etc., son opcionales y puedes desmarcarlos si no los necesitas.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Directorio de Instalación:</strong>
+-   Selecciona el directorio de instalación. Como se mencionó, <code class="docutils literal notranslate"><span class="pre">C:\xampp\</span></code> es la opción recomendada en Windows.</p></li>
+<li><p><strong>Idioma y Bitnami:</strong>
+-   Selecciona el idioma.
+-   El instalador podría ofrecer instalar software adicional a través de Bitnami para XAMPP (para instalar WordPress, Drupal, etc., fácilmente). Puedes desmarcar esta opción si solo necesitas el stack base.</p></li>
+<li><p><strong>Proceso de Instalación:</strong>
+-   El instalador extraerá los archivos y configurará los componentes. Este proceso puede tardar unos minutos.
+-   Si tu firewall de Windows te pregunta si deseas permitir que Apache se comunique en redes privadas y/o públicas, permítelo (al menos para redes privadas).</p></li>
+<li><p><strong>Finalización de la Instalación:</strong>
+-   Una vez completada la instalación, el asistente te preguntará si deseas iniciar el Panel de Control de XAMPP ahora. Marca la casilla y haz clic en «Finish».</p></li>
+</ol>
+</section>
+<section id="uso-del-panel-de-control-de-xampp">
+<h3>Uso del Panel de Control de XAMPP:<a class="headerlink" href="#uso-del-panel-de-control-de-xampp" title="Link to this heading"></a></h3>
+<p>El Panel de Control de XAMPP es tu centro de mando para gestionar los servicios:</p>
+<ul class="simple">
+<li><p><strong>Iniciar/Detener Servicios:</strong> Verás una lista de módulos (Apache, MySQL, etc.). Haz clic en el botón «Start» junto a Apache y MySQL para iniciarlos. Si se inician correctamente, sus nombres se resaltarán en verde y se mostrarán los puertos que están utilizando (e.g., Apache: Port 80, 443; MySQL: Port 3306).</p></li>
+<li><p><strong>Admin:</strong> Al lado de cada módulo iniciado, hay un botón «Admin».
+-   Hacer clic en «Admin» para Apache abrirá <code class="docutils literal notranslate"><span class="pre">http://localhost/dashboard/</span></code> en tu navegador.
+-   Hacer clic en «Admin» para MySQL abrirá phpMyAdmin (<code class="docutils literal notranslate"><span class="pre">http://localhost/phpmyadmin/</span></code>).</p></li>
+<li><p><strong>Config:</strong> Permite acceder a archivos de configuración importantes de cada servicio (e.g., <code class="docutils literal notranslate"><span class="pre">httpd.conf</span></code> para Apache, <code class="docutils literal notranslate"><span class="pre">php.ini</span></code> para PHP, <code class="docutils literal notranslate"><span class="pre">my.ini</span></code> para MySQL).</p></li>
+<li><p><strong>Logs:</strong> Permite ver los archivos de log de errores y acceso de cada servicio, muy útiles para depurar problemas.</p></li>
+<li><p><strong>Netstat:</strong> Una herramienta útil para verificar qué puertos están en uso y por qué aplicación.</p></li>
+</ul>
+</section>
+<section id="verificacion-y-primeros-pasos">
+<h3>Verificación y Primeros Pasos:<a class="headerlink" href="#verificacion-y-primeros-pasos" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p><strong>Verificar Apache:</strong> Abre tu navegador y ve a <code class="docutils literal notranslate"><span class="pre">http://localhost</span></code>. Deberías ver la página de bienvenida de XAMPP o el dashboard.</p></li>
+<li><p><strong>Verificar PHP:</strong> Crea un archivo llamado <code class="docutils literal notranslate"><span class="pre">info.php</span></code> en <code class="docutils literal notranslate"><span class="pre">C:\xampp\htdocs\</span></code> con el siguiente contenido:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nb">phpinfo</span><span class="p">();</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+<p>Luego, navega a <code class="docutils literal notranslate"><span class="pre">http://localhost/info.php</span></code>. Deberías ver una página detallada con toda la configuración de PHP. Por seguridad, elimina este archivo después de verificar.</p>
+</li>
+<li><p><strong>Verificar MySQL y phpMyAdmin:</strong> En el Panel de Control, haz clic en «Admin» para MySQL o navega directamente a <code class="docutils literal notranslate"><span class="pre">http://localhost/phpmyadmin</span></code>. Deberías poder acceder a la interfaz de phpMyAdmin.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="07_entornos_pruebas.html" class="btn btn-neutral float-left" title="Capítulo 7: Entornos de Pruebas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="07_2_entornos_remotos_byethost.html" class="btn btn-neutral float-right" title="7.2 Fundamentos y Uso de Entornos de Prueba Remotos (ByetHost)" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2012-2025 Jose Alexis Correa Valencia.
+      <span class="lastupdated">Actualizado por última vez en may 27, 2025.
+      </span></p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>

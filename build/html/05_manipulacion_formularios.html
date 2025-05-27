@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5: Manipulación de Formularios &mdash; documentación de Higgs - 7.0.2</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=67a8c293" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/css/citheme.css" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="canonical" href="https://higgs.com.co/05_manipulacion_formularios.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=e20d7d46"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=efdbd0b9"></script>
+        <script src="_static/js/citheme.js"></script>
+        <script src="_static/js/carbon.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="6: Manejo de Archivos y Sesiones" href="06_manejo_archivos_sesiones.html" />
+    <link rel="prev" title="4: Arrays y Funciones" href="04_arrays_funciones.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/logo.svg" class="logo" alt="Logotipo"/>
+          </a>
+              <div class="version">
+                7.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="00_introduccion.html">Curso Completo de PHP desde Cero</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#informacion-del-curso">Información del Curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#objetivos-del-curso">Objetivos del Curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#metodologia">Metodología</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="01_introduccion_programacion_php.html">1: Introducción a la Programación y PHP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_1_que_es_programacion.html">1.1 ¿Qué es la Programación?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_1_que_es_programacion.html#conceptos-fundamentales-en-programacion">Conceptos Fundamentales en Programación:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="01_2_introduccion_php.html">1.2 Introducción a PHP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_2_introduccion_php.html#caracteristicas-clave-de-php">Características Clave de PHP:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_2_introduccion_php.html#casos-de-uso-comunes-de-php">Casos de Uso Comunes de PHP:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="01_3_configuracion_entorno.html">1.3 Configuración del Entorno de Desarrollo Local</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_3_configuracion_entorno.html#opciones-de-entornos-de-desarrollo-integrados-stacks">Opciones de Entornos de Desarrollo Integrados (Stacks):</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_3_configuracion_entorno.html#estructura-de-directorios-tipica-ejemplo-xampp-en-windows">Estructura de Directorios Típica (Ejemplo XAMPP en Windows):</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_3_configuracion_entorno.html#editores-de-codigo-y-entornos-de-desarrollo-integrados-ides">Editores de Código y Entornos de Desarrollo Integrados (IDEs):</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="01_4_primer_script_php.html">1.4 Tu Primer Script PHP: «Hola, Mundo»</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_4_primer_script_php.html#pasos-para-crear-y-ejecutar-el-script">Pasos para crear y ejecutar el script:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_4_primer_script_php.html#anatomia-de-un-script-php-basico">Anatomía de un Script PHP Básico:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="01_4_primer_script_php.html#ejercicios-semana-1">Ejercicios Semana 1:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_variables_tipos_datos.html">2: Variables y Tipos de Datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_variables_tipos_datos.html#semana-2-trabajando-con-datos">Semana 2: Trabajando con Datos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#variables-en-php">2.1 Variables en PHP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_variables_tipos_datos.html#reglas-para-variables">Reglas para Variables:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#tipos-de-datos">2.2 Tipos de Datos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_variables_tipos_datos.html#tipos-primitivos">Tipos Primitivos:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#operaciones-con-variables">2.3 Operaciones con Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_variables_tipos_datos.html#concatenacion-de-strings">Concatenación de Strings:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_variables_tipos_datos.html#interpolacion-de-variables">Interpolación de Variables:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#constantes">2.4 Constantes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#conversion-de-tipos">2.5 Conversión de Tipos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_variables_tipos_datos.html#ejercicios-semana-2">Ejercicios Semana 2:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_arrays_funciones.html">4: Arrays y Funciones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#arrays-arreglos">4.1 Arrays (Arreglos)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#arrays-indexados">Arrays Indexados:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#arrays-asociativos">Arrays Asociativos:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#arrays-multidimensionales">Arrays Multidimensionales:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#operaciones-con-arrays">4.2 Operaciones con Arrays</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#agregar-elementos">Agregar Elementos:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#recorrer-arrays">Recorrer Arrays:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#funciones-utiles-para-arrays">4.3 Funciones Útiles para Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#funciones-definidas-por-el-usuario">4.4 Funciones Definidas por el Usuario</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#funcion-basica">Función Básica:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#funciones-con-parametros">Funciones con Parámetros:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#funciones-que-retornan-valores">Funciones que Retornan Valores:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#funciones-con-arrays">Funciones con Arrays:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#alcance-de-variables-scope">4.5 Alcance de Variables (Scope)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#ejercicios-semana-4">Ejercicios Semana 4:</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5: Manipulación de Formularios</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fundamentos-de-formularios-html">5.1 Fundamentos de Formularios HTML</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#formulario-basico">Formulario Básico:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#procesamiento-con-php">5.2 Procesamiento con PHP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#archivo-procesar-php">Archivo procesar.php:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#metodos-get-y-post">5.3 Métodos GET y POST</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#metodo-get">Método GET:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metodo-post-recomendado-para-formularios">Método POST (Recomendado para formularios):</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#validacion-de-formularios">5.4 Validación de Formularios</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#validacion-basica">Validación Básica:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#formulario-completo-con-validacion">5.5 Formulario Completo con Validación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#registro-php">registro.php:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-input-avanzados">5.6 Tipos de Input Avanzados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ejercicios-semana-5">Ejercicios Semana 5:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06_manejo_archivos_sesiones.html">6: Manejo de Archivos y Sesiones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="06_manejo_archivos_sesiones.html#manipulacion-de-archivos">6.1 Manipulación de Archivos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#leer-archivos">Leer Archivos:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#escribir-archivos">Escribir Archivos:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="06_manejo_archivos_sesiones.html#sistema-de-registro-de-usuarios">6.2 Sistema de Registro de Usuarios</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#registro-archivo-php">registro_archivo.php:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="07_entornos_pruebas.html">7: Entornos de Pruebas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="07_entornos_pruebas.html#que-es-un-entorno-de-pruebas">¿Qué es un Entorno de Pruebas?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="07_entornos_pruebas.html#caracteristicas-clave-de-un-buen-entorno-de-pruebas">Características Clave de un Buen Entorno de Pruebas:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="07_entornos_pruebas.html#utilidad-y-necesidad-de-los-entornos-de-pruebas">Utilidad y Necesidad de los Entornos de Pruebas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_entornos_pruebas.html#como-los-entornos-de-pruebas-te-preparan-para-la-programacion-real">Cómo los Entornos de Pruebas te Preparan para la Programación Real</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="07_1_entornos_locales_xampp.html">7.1 Fundamentos y Configuración de Entornos Locales (XAMPP)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="07_1_entornos_locales_xampp.html#instalacion-detallada-y-configuracion-de-xampp">Instalación Detallada y Configuración de XAMPP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="07_2_entornos_remotos_byethost.html">7.2 Fundamentos y Uso de Entornos de Prueba Remotos (ByetHost)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="07_2_entornos_remotos_byethost.html#pruebas-en-entorno-remoto-con-byethost-o-similar">Pruebas en Entorno Remoto con ByetHost (o similar)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Higgs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">5: Manipulación de Formularios</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="manipulacion-de-formularios">
+<h1>5: Manipulación de Formularios<a class="headerlink" href="#manipulacion-de-formularios" title="Link to this heading"></a></h1>
+<section id="fundamentos-de-formularios-html">
+<h2>5.1 Fundamentos de Formularios HTML<a class="headerlink" href="#fundamentos-de-formularios-html" title="Link to this heading"></a></h2>
+<section id="formulario-basico">
+<h3>Formulario Básico:<a class="headerlink" href="#formulario-basico" title="Link to this heading"></a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Mi Formulario<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;procesar.php&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;nombre&quot;</span><span class="p">&gt;</span>Nombre:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nombre&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nombre&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span>Email:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;edad&quot;</span><span class="p">&gt;</span>Edad:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;edad&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;edad&quot;</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;120&quot;</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Enviar&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="procesamiento-con-php">
+<h2>5.2 Procesamiento con PHP<a class="headerlink" href="#procesamiento-con-php" title="Link to this heading"></a></h2>
+<section id="archivo-procesar-php">
+<h3>Archivo procesar.php:<a class="headerlink" href="#archivo-procesar-php" title="Link to this heading"></a></h3>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// Verificar si el formulario fue enviado</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$_POST</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Obtener datos del formulario</span>
+    <span class="nv">$nombre</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;nombre&#39;</span><span class="p">];</span>
+    <span class="nv">$email</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">];</span>
+    <span class="nv">$edad</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">];</span>
+
+    <span class="c1">// Mostrar los datos</span>
+    <span class="k">echo</span> <span class="s2">&quot;&lt;h2&gt;Datos Recibidos:&lt;/h2&gt;&quot;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&quot;Nombre: </span><span class="si">$nombre</span><span class="s2">&lt;br&gt;&quot;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&quot;Email: </span><span class="si">$email</span><span class="s2">&lt;br&gt;&quot;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&quot;Edad: </span><span class="si">$edad</span><span class="s2"> años&lt;br&gt;&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="metodos-get-y-post">
+<h2>5.3 Métodos GET y POST<a class="headerlink" href="#metodos-get-y-post" title="Link to this heading"></a></h2>
+<section id="metodo-get">
+<h3>Método GET:<a class="headerlink" href="#metodo-get" title="Link to this heading"></a></h3>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// URL: ejemplo.php?nombre=Juan&amp;edad=25</span>
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;nombre&#39;</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="nv">$nombre</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;nombre&#39;</span><span class="p">];</span>
+    <span class="nv">$edad</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">];</span>
+    <span class="k">echo</span> <span class="s2">&quot;Hola </span><span class="si">$nombre</span><span class="s2">, tienes </span><span class="si">$edad</span><span class="s2"> años&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="metodo-post-recomendado-para-formularios">
+<h3>Método POST (Recomendado para formularios):<a class="headerlink" href="#metodo-post-recomendado-para-formularios" title="Link to this heading"></a></h3>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$usuario</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;usuario&#39;</span><span class="p">];</span>
+    <span class="nv">$password</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">];</span>
+
+    <span class="c1">// Procesar datos de forma segura</span>
+    <span class="k">echo</span> <span class="s2">&quot;Usuario: &quot;</span> <span class="o">.</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$usuario</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="validacion-de-formularios">
+<h2>5.4 Validación de Formularios<a class="headerlink" href="#validacion-de-formularios" title="Link to this heading"></a></h2>
+<section id="validacion-basica">
+<h3>Validación Básica:<a class="headerlink" href="#validacion-basica" title="Link to this heading"></a></h3>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$errores</span> <span class="o">=</span> <span class="p">[];</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nv">$_POST</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Validar nombre</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;nombre&#39;</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;El nombre es obligatorio&quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;nombre&#39;</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;El nombre debe tener al menos 2 caracteres&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Validar email</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;El email es obligatorio&quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="o">!</span><span class="nb">filter_var</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">],</span> <span class="nx">FILTER_VALIDATE_EMAIL</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;El email no es válido&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Validar edad</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;La edad es obligatoria&quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="o">||</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">120</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;La edad debe estar entre 1 y 120 años&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Si no hay errores, procesar</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$errores</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;Formulario válido, procesando datos...&quot;</span><span class="p">;</span>
+        <span class="c1">// Aquí iría el código para guardar en base de datos</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;ul&gt;&quot;</span><span class="p">;</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="nv">$errores</span> <span class="k">as</span> <span class="nv">$error</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;li style=&#39;color: red;&#39;&gt;</span><span class="si">$error</span><span class="s2">&lt;/li&gt;&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;/ul&gt;&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="formulario-completo-con-validacion">
+<h2>5.5 Formulario Completo con Validación<a class="headerlink" href="#formulario-completo-con-validacion" title="Link to this heading"></a></h2>
+<section id="registro-php">
+<h3>registro.php:<a class="headerlink" href="#registro-php" title="Link to this heading"></a></h3>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$nombre</span> <span class="o">=</span> <span class="nv">$email</span> <span class="o">=</span> <span class="nv">$edad</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="nv">$errores</span> <span class="o">=</span> <span class="p">[];</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">&quot;REQUEST_METHOD&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;POST&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Limpiar y validar nombre</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;nombre&quot;</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;El nombre es obligatorio&quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nv">$nombre</span> <span class="o">=</span> <span class="nx">limpiar_entrada</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;nombre&quot;</span><span class="p">]);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">&quot;/^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]*$/&quot;</span><span class="p">,</span> <span class="nv">$nombre</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;Solo se permiten letras y espacios en el nombre&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Validar email</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;email&quot;</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;El email es obligatorio&quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nv">$email</span> <span class="o">=</span> <span class="nx">limpiar_entrada</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;email&quot;</span><span class="p">]);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">filter_var</span><span class="p">(</span><span class="nv">$email</span><span class="p">,</span> <span class="nx">FILTER_VALIDATE_EMAIL</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;Formato de email inválido&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Validar edad</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;edad&quot;</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;La edad es obligatoria&quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nv">$edad</span> <span class="o">=</span> <span class="nx">limpiar_entrada</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;edad&quot;</span><span class="p">]);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">is_numeric</span><span class="p">(</span><span class="nv">$edad</span><span class="p">)</span> <span class="o">||</span> <span class="nv">$edad</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="o">||</span> <span class="nv">$edad</span> <span class="o">&gt;</span> <span class="mi">120</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$errores</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;La edad debe ser un número entre 1 y 120&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Si no hay errores</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$errores</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;div style=&#39;color: green; padding: 10px; border: 1px solid green;&#39;&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;h3&gt;¡Registro exitoso!&lt;/h3&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;Nombre: </span><span class="si">$nombre</span><span class="s2">&lt;br&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;Email: </span><span class="si">$email</span><span class="s2">&lt;br&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;Edad: </span><span class="si">$edad</span><span class="s2"> años&lt;br&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;/div&gt;&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">limpiar_entrada</span><span class="p">(</span><span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$data</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>           <span class="c1">// Eliminar espacios</span>
+    <span class="nv">$data</span> <span class="o">=</span> <span class="nb">stripslashes</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>   <span class="c1">// Eliminar backslashes</span>
+    <span class="nv">$data</span> <span class="o">=</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span> <span class="c1">// Convertir caracteres especiales</span>
+    <span class="k">return</span> <span class="nv">$data</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+
+<span class="x">&lt;!DOCTYPE html&gt;</span>
+<span class="x">&lt;html&gt;</span>
+<span class="x">&lt;head&gt;</span>
+<span class="x">    &lt;title&gt;Formulario de Registro&lt;/title&gt;</span>
+<span class="x">    &lt;style&gt;</span>
+<span class="x">        .error { color: red; }</span>
+<span class="x">        .form-group { margin-bottom: 15px; }</span>
+<span class="x">        label { display: block; margin-bottom: 5px; }</span>
+<span class="x">        input[type=&quot;text&quot;], input[type=&quot;email&quot;], input[type=&quot;number&quot;] {</span>
+<span class="x">            width: 300px;</span>
+<span class="x">            padding: 8px;</span>
+<span class="x">            border: 1px solid #ddd;</span>
+<span class="x">        }</span>
+<span class="x">        input[type=&quot;submit&quot;] {</span>
+<span class="x">            background-color: #4CAF50;</span>
+<span class="x">            color: white;</span>
+<span class="x">            padding: 10px 20px;</span>
+<span class="x">            border: none;</span>
+<span class="x">            cursor: pointer;</span>
+<span class="x">        }</span>
+<span class="x">    &lt;/style&gt;</span>
+<span class="x">&lt;/head&gt;</span>
+<span class="x">&lt;body&gt;</span>
+<span class="x">    &lt;h2&gt;Formulario de Registro&lt;/h2&gt;</span>
+
+<span class="x">    </span><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$errores</span><span class="p">))</span><span class="o">:</span> <span class="cp">?&gt;</span>
+<span class="x">        &lt;div style=&quot;color: red; border: 1px solid red; padding: 10px; margin-bottom: 20px;&quot;&gt;</span>
+<span class="x">            &lt;h4&gt;Errores encontrados:&lt;/h4&gt;</span>
+<span class="x">            &lt;ul&gt;</span>
+<span class="x">                </span><span class="cp">&lt;?php</span> <span class="k">foreach</span> <span class="p">(</span><span class="nv">$errores</span> <span class="k">as</span> <span class="nv">$error</span><span class="p">)</span><span class="o">:</span> <span class="cp">?&gt;</span>
+<span class="x">                    &lt;li&gt;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$error</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x">&lt;/li&gt;</span>
+<span class="x">                </span><span class="cp">&lt;?php</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span>
+<span class="x">            &lt;/ul&gt;</span>
+<span class="x">        &lt;/div&gt;</span>
+<span class="x">    </span><span class="cp">&lt;?php</span> <span class="k">endif</span><span class="p">;</span> <span class="cp">?&gt;</span>
+
+<span class="x">    &lt;form method=&quot;post&quot; action=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">&quot;PHP_SELF&quot;</span><span class="p">]);</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span>
+<span class="x">        &lt;div class=&quot;form-group&quot;&gt;</span>
+<span class="x">            &lt;label for=&quot;nombre&quot;&gt;Nombre:&lt;/label&gt;</span>
+<span class="x">            &lt;input type=&quot;text&quot; name=&quot;nombre&quot; value=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$nombre</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span>
+<span class="x">        &lt;/div&gt;</span>
+
+<span class="x">        &lt;div class=&quot;form-group&quot;&gt;</span>
+<span class="x">            &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;</span>
+<span class="x">            &lt;input type=&quot;email&quot; name=&quot;email&quot; value=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$email</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span>
+<span class="x">        &lt;/div&gt;</span>
+
+<span class="x">        &lt;div class=&quot;form-group&quot;&gt;</span>
+<span class="x">            &lt;label for=&quot;edad&quot;&gt;Edad:&lt;/label&gt;</span>
+<span class="x">            &lt;input type=&quot;number&quot; name=&quot;edad&quot; value=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$edad</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span>
+<span class="x">        &lt;/div&gt;</span>
+
+<span class="x">        &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Registrar&quot;&gt;</span>
+<span class="x">    &lt;/form&gt;</span>
+<span class="x">&lt;/body&gt;</span>
+<span class="x">&lt;/html&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="tipos-de-input-avanzados">
+<h2>5.6 Tipos de Input Avanzados<a class="headerlink" href="#tipos-de-input-avanzados" title="Link to this heading"></a></h2>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- Diferentes tipos de input --&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;procesar_avanzado.php&quot;</span><span class="p">&gt;</span>
+    <span class="cm">&lt;!-- Texto con patrón --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;telefono&quot;</span> <span class="na">pattern</span><span class="o">=</span><span class="s">&quot;[0-9]{3}-[0-9]{3}-[0-9]{4}&quot;</span>
+           <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;123-456-7890&quot;</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- Contraseña --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&quot;8&quot;</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- Fecha --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;fecha_nacimiento&quot;</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- Rango --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;range&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;puntuacion&quot;</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;10&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- Checkbox --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;acepta_terminos&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;si&quot;</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- Radio buttons --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;genero&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;masculino&quot;</span><span class="p">&gt;</span> Masculino
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;genero&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;femenino&quot;</span><span class="p">&gt;</span> Femenino
+
+    <span class="cm">&lt;!-- Select --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;pais&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;mexico&quot;</span><span class="p">&gt;</span>México<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;españa&quot;</span><span class="p">&gt;</span>España<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;argentina&quot;</span><span class="p">&gt;</span>Argentina<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- Textarea --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;comentarios&quot;</span> <span class="na">rows</span><span class="o">=</span><span class="s">&quot;4&quot;</span> <span class="na">cols</span><span class="o">=</span><span class="s">&quot;50&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="ejercicios-semana-5">
+<h2>Ejercicios Semana 5:<a class="headerlink" href="#ejercicios-semana-5" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Formulario de Contacto:</strong> Crear formulario completo con validación</p></li>
+<li><p><strong>Calculadora Web:</strong> Formulario que realice operaciones matemáticas</p></li>
+<li><p><strong>Encuesta de Satisfacción:</strong> Formulario con diferentes tipos de input</p></li>
+<li><p><strong>Sistema de Login Simple:</strong> Formulario de inicio de sesión básico</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="04_arrays_funciones.html" class="btn btn-neutral float-left" title="4: Arrays y Funciones" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="06_manejo_archivos_sesiones.html" class="btn btn-neutral float-right" title="6: Manejo de Archivos y Sesiones" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2012-2025 Jose Alexis Correa Valencia.
+      <span class="lastupdated">Actualizado por última vez en may 27, 2025.
+      </span></p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>
