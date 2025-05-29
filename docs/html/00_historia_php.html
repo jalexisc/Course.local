@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="es" data-content_root="./">
+<html class="writer-html5" lang="es">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Historia de PHP &mdash; documentación de Higgs - 7.0.2</title>
-      <link rel="stylesheet" type="text/css" href="static/pygments.css?v=67a8c293" />
-      <link rel="stylesheet" type="text/css" href="static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="static/css/citheme.css" />
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/citheme.css" type="text/css" />
 
   
     <link rel="shortcut icon" href="static/favicon.ico"/>
@@ -16,12 +16,13 @@
     <script src="static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="static/jquery.js?v=5d32c60e"></script>
-        <script src="static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="static/documentation_options.js?v=e20d7d46"></script>
-        <script src="static/doctools.js?v=888ff710"></script>
-        <script src="static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="static/translations.js?v=efdbd0b9"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+        <script src="static/translations.js"></script>
         <script src="static/js/citheme.js"></script>
         <script src="static/js/carbon.js"></script>
     <script src="static/js/theme.js"></script>
@@ -56,43 +57,40 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="00_introduccion.html">Curso Completo de PHP desde Cero</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="00_informacion_curso.html">Información del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_objetivos_curso.html">Objetivos del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_metodologia.html">Metodología</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Historia de PHP</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#los-humildes-comienzos-1994-1995">Los Humildes Comienzos (1994-1995)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#la-era-de-la-colaboracion-1997-1998">La Era de la Colaboración (1997-1998)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#el-motor-zend-y-la-madurez-1999-2004">El Motor Zend y la Madurez (1999-2004)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#la-revolucion-orientada-a-objetos-2004-2009">La Revolución Orientada a Objetos (2004-2009)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#la-era-moderna-2009-2015">La Era Moderna (2009-2015)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_informacion_curso.html">Información del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_objetivos_curso.html">Objetivos del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_metodologia.html">Metodología</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Historia de PHP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#los-humildes-comienzos-1994-1995">Los Humildes Comienzos (1994-1995)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#la-era-de-la-colaboracion-1997-1998">La Era de la Colaboración (1997-1998)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#el-motor-zend-y-la-madurez-1999-2004">El Motor Zend y la Madurez (1999-2004)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#la-revolucion-orientada-a-objetos-2004-2009">La Revolución Orientada a Objetos (2004-2009)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#la-era-moderna-2009-2015">La Era Moderna (2009-2015)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#namespaces">Namespaces</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#closures-funciones-anonimas">Closures (funciones anónimas)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#traits-php-5-4">Traits (PHP 5.4)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#el-salto-generacional-php-7-2015">El Salto Generacional: PHP 7 (2015)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#namespaces">Namespaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#closures-funciones-anonimas">Closures (funciones anónimas)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#traits-php-5-4">Traits (PHP 5.4)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#el-salto-generacional-php-7-2015">El Salto Generacional: PHP 7 (2015)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#mejoras-de-rendimiento">Mejoras de Rendimiento</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#nuevas-caracteristicas">Nuevas Características</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#php-en-la-era-moderna-2017-presente">PHP en la Era Moderna (2017-presente)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#mejoras-de-rendimiento">Mejoras de Rendimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#nuevas-caracteristicas">Nuevas Características</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#php-en-la-era-moderna-2017-presente">PHP en la Era Moderna (2017-presente)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#php-7-1-7-4">PHP 7.1-7.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#php-8-0-2020">PHP 8.0 (2020)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#php-8-1-8-3">PHP 8.1-8.3</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#lecciones-para-el-desarrollador-moderno">Lecciones para el Desarrollador Moderno</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#php-7-1-7-4">PHP 7.1-7.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#php-8-0-2020">PHP 8.0 (2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#php-8-1-8-3">PHP 8.1-8.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lecciones-para-el-desarrollador-moderno">Lecciones para el Desarrollador Moderno</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#la-importancia-de-la-comunidad">1. La Importancia de la Comunidad</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#evolucion-constante">2. Evolución Constante</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pragmatismo-sobre-pureza">3. Pragmatismo sobre Pureza</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#el-valor-de-la-refactorizacion">4. El Valor de la Refactorización</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#reflexion-final">Reflexión Final</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#referencias-y-recursos-adicionales">Referencias y Recursos Adicionales</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="#la-importancia-de-la-comunidad">1. La Importancia de la Comunidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#evolucion-constante">2. Evolución Constante</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#pragmatismo-sobre-pureza">3. Pragmatismo sobre Pureza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#el-valor-de-la-refactorizacion">4. El Valor de la Refactorización</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#reflexion-final">Reflexión Final</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#referencias-y-recursos-adicionales">Referencias y Recursos Adicionales</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="01_introduccion_programacion_php.html">1: Introducción a la Programación y PHP</a><ul>
@@ -255,7 +253,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="00_introduccion.html">Curso Completo de PHP desde Cero</a></li>
       <li class="breadcrumb-item active">Historia de PHP</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -266,10 +263,10 @@
            <div itemprop="articleBody">
              
   <section id="historia-de-php">
-<h1><a class="toc-backref" href="#id2" role="doc-backlink">Historia de PHP</a><a class="headerlink" href="#historia-de-php" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id2" role="doc-backlink">Historia de PHP</a><a class="headerlink" href="#historia-de-php" title="Enlace permanente a este encabezado"></a></h1>
 <p>Como desarrolladores, es fundamental comprender no solo cómo funciona PHP hoy en día, sino también cómo llegamos hasta aquí. La historia de PHP es un fascinante viaje de evolución tecnológica que nos enseña lecciones valiosas sobre el desarrollo de software, la toma de decisiones arquitecturales y la importancia de la comunidad en el éxito de un lenguaje de programación.</p>
 <section id="los-humildes-comienzos-1994-1995">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Los Humildes Comienzos (1994-1995)</a><a class="headerlink" href="#los-humildes-comienzos-1994-1995" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Los Humildes Comienzos (1994-1995)</a><a class="headerlink" href="#los-humildes-comienzos-1994-1995" title="Enlace permanente a este encabezado"></a></h2>
 <p>PHP nació en 1994 de la mano de <strong>Rasmus Lerdorf</strong>, un programador danés-canadiense que trabajaba en el Centro Nacional de Supercomputación de Estados Unidos. Lo que comenzó como un simple conjunto de scripts en Perl para rastrear las visitas a su página web personal, evolucionó rápidamente hacia algo más ambicioso.</p>
 <p>Lerdorf necesitaba una herramienta más eficiente para gestionar su sitio web y decidió reescribir sus scripts en C, creando lo que inicialmente llamó <em>«Personal Home Page Tools»</em> (de ahí el acrónimo PHP). La primera versión pública, <strong>PHP/FI</strong> (Personal Home Page/Forms Interpreter), fue lanzada en 1995.</p>
 <div class="admonition note">
@@ -321,7 +318,7 @@
 </nav>
 </section>
 <section id="la-era-de-la-colaboracion-1997-1998">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">La Era de la Colaboración (1997-1998)</a><a class="headerlink" href="#la-era-de-la-colaboracion-1997-1998" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">La Era de la Colaboración (1997-1998)</a><a class="headerlink" href="#la-era-de-la-colaboracion-1997-1998" title="Enlace permanente a este encabezado"></a></h2>
 <p>En 1997, dos desarrolladores israelíes, <strong>Andi Gutmans</strong> y <strong>Zeev Suraski</strong>, se unieron al proyecto. Tras utilizar PHP para un proyecto de comercio electrónico, se dieron cuenta de las limitaciones del intérprete existente y decidieron reescribirlo completamente.</p>
 <p>Su trabajo resultó en <strong>PHP 3.0</strong>, lanzado en 1998, que introdujo:</p>
 <ul class="simple">
@@ -336,7 +333,7 @@
 </div>
 </section>
 <section id="el-motor-zend-y-la-madurez-1999-2004">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">El Motor Zend y la Madurez (1999-2004)</a><a class="headerlink" href="#el-motor-zend-y-la-madurez-1999-2004" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">El Motor Zend y la Madurez (1999-2004)</a><a class="headerlink" href="#el-motor-zend-y-la-madurez-1999-2004" title="Enlace permanente a este encabezado"></a></h2>
 <p><strong>PHP 4.0</strong>, lanzado en 2000, introdujo el <strong>motor Zend Engine</strong>, desarrollado por Gutmans y Suraski (el nombre «Zend» proviene de sus nombres: <strong>Ze</strong>ev y <strong>A</strong>ndi). Este motor proporcionó:</p>
 <ul class="simple">
 <li><p>Mejor rendimiento</p></li>
@@ -351,7 +348,7 @@
 </div>
 </section>
 <section id="la-revolucion-orientada-a-objetos-2004-2009">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">La Revolución Orientada a Objetos (2004-2009)</a><a class="headerlink" href="#la-revolucion-orientada-a-objetos-2004-2009" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">La Revolución Orientada a Objetos (2004-2009)</a><a class="headerlink" href="#la-revolucion-orientada-a-objetos-2004-2009" title="Enlace permanente a este encabezado"></a></h2>
 <p><strong>PHP 5.0</strong>, lanzado en 2004, marcó un punto de inflexión con <strong>Zend Engine 2</strong>, que introdujo:</p>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">// Ejemplo de las nuevas características de PHP 5</span>
 <span class="x">class MiClase {</span>
@@ -387,12 +384,12 @@
 </div>
 </section>
 <section id="la-era-moderna-2009-2015">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">La Era Moderna (2009-2015)</a><a class="headerlink" href="#la-era-moderna-2009-2015" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">La Era Moderna (2009-2015)</a><a class="headerlink" href="#la-era-moderna-2009-2015" title="Enlace permanente a este encabezado"></a></h2>
 <p><strong>PHP 5.3</strong> (2009) introdujo características que cambiaron fundamentalmente cómo escribimos código PHP:</p>
 </section>
 </section>
 <section id="namespaces">
-<h1><a class="toc-backref" href="#id8" role="doc-backlink">Namespaces</a><a class="headerlink" href="#namespaces" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id8" role="doc-backlink">Namespaces</a><a class="headerlink" href="#namespaces" title="Enlace permanente a este encabezado"></a></h1>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">namespace MiProyecto\Utils;</span>
 
 <span class="x">class Helper {</span>
@@ -404,7 +401,7 @@
 </div>
 </section>
 <section id="closures-funciones-anonimas">
-<h1><a class="toc-backref" href="#id9" role="doc-backlink">Closures (funciones anónimas)</a><a class="headerlink" href="#closures-funciones-anonimas" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id9" role="doc-backlink">Closures (funciones anónimas)</a><a class="headerlink" href="#closures-funciones-anonimas" title="Enlace permanente a este encabezado"></a></h1>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">$numeros = [1, 2, 3, 4, 5];</span>
 <span class="x">$cuadrados = array_map(function($n) {</span>
 <span class="x">    return $n * $n;</span>
@@ -413,7 +410,7 @@
 </div>
 </section>
 <section id="traits-php-5-4">
-<h1><a class="toc-backref" href="#id10" role="doc-backlink">Traits (PHP 5.4)</a><a class="headerlink" href="#traits-php-5-4" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id10" role="doc-backlink">Traits (PHP 5.4)</a><a class="headerlink" href="#traits-php-5-4" title="Enlace permanente a este encabezado"></a></h1>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">trait Loggeable {</span>
 <span class="x">    public function log($mensaje) {</span>
 <span class="x">        echo &quot;[LOG] &quot; . $mensaje;</span>
@@ -431,14 +428,14 @@
 <p><strong>Lección profesional</strong>: La introducción de namespaces y traits resolvió problemas reales de organización y reutilización de código que habían limitado el desarrollo de aplicaciones complejas en PHP.</p>
 </div>
 <section id="el-salto-generacional-php-7-2015">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">El Salto Generacional: PHP 7 (2015)</a><a class="headerlink" href="#el-salto-generacional-php-7-2015" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">El Salto Generacional: PHP 7 (2015)</a><a class="headerlink" href="#el-salto-generacional-php-7-2015" title="Enlace permanente a este encabezado"></a></h2>
 <p><strong>PHP 7.0</strong> fue quizás la actualización más significativa en la historia del lenguaje. Impulsado por el nuevo <strong>Zend Engine 3.0</strong>, ofreció:</p>
 </section>
 </section>
 <section id="mejoras-de-rendimiento">
-<h1><a class="toc-backref" href="#id12" role="doc-backlink">Mejoras de Rendimiento</a><a class="headerlink" href="#mejoras-de-rendimiento" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id12" role="doc-backlink">Mejoras de Rendimiento</a><a class="headerlink" href="#mejoras-de-rendimiento" title="Enlace permanente a este encabezado"></a></h1>
 <table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Comparación de Rendimiento PHP 5.6 vs PHP 7.0</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<caption><span class="caption-text">Comparación de Rendimiento PHP 5.6 vs PHP 7.0</span><a class="headerlink" href="#id1" title="Enlace permanente a esta tabla"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Métrica</p></th>
 <th class="head"><p>PHP 5.6</p></th>
@@ -458,7 +455,7 @@
 </table>
 </section>
 <section id="nuevas-caracteristicas">
-<h1><a class="toc-backref" href="#id13" role="doc-backlink">Nuevas Características</a><a class="headerlink" href="#nuevas-caracteristicas" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id13" role="doc-backlink">Nuevas Características</a><a class="headerlink" href="#nuevas-caracteristicas" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
 <li><p><strong>Declaraciones de tipo escalar</strong>:</p></li>
 </ul>
@@ -492,12 +489,12 @@
 <p><strong>Lección profesional</strong>: A veces, las decisiones difíciles (como cancelar PHP 6) son necesarias para el bien del proyecto a largo plazo. El enfoque en rendimiento de PHP 7 demostró que optimizar el código existente puede ser más valioso que agregar nuevas características.</p>
 </div>
 <section id="php-en-la-era-moderna-2017-presente">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink">PHP en la Era Moderna (2017-presente)</a><a class="headerlink" href="#php-en-la-era-moderna-2017-presente" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">PHP en la Era Moderna (2017-presente)</a><a class="headerlink" href="#php-en-la-era-moderna-2017-presente" title="Enlace permanente a este encabezado"></a></h2>
 <p>Las versiones posteriores han continuado mejorando el lenguaje:</p>
 </section>
 </section>
 <section id="php-7-1-7-4">
-<h1><a class="toc-backref" href="#id15" role="doc-backlink">PHP 7.1-7.4</a><a class="headerlink" href="#php-7-1-7-4" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id15" role="doc-backlink">PHP 7.1-7.4</a><a class="headerlink" href="#php-7-1-7-4" title="Enlace permanente a este encabezado"></a></h1>
 <p>Introdujeron:</p>
 <ul class="simple">
 <li><p><strong>Nullable types</strong>: <code class="docutils literal notranslate"><span class="pre">?string</span> <span class="pre">$variable</span></code></p></li>
@@ -507,7 +504,7 @@
 </ul>
 </section>
 <section id="php-8-0-2020">
-<h1><a class="toc-backref" href="#id16" role="doc-backlink">PHP 8.0 (2020)</a><a class="headerlink" href="#php-8-0-2020" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id16" role="doc-backlink">PHP 8.0 (2020)</a><a class="headerlink" href="#php-8-0-2020" title="Enlace permanente a este encabezado"></a></h1>
 <p>Marcó otro hito con:</p>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">// JIT Compilation (Just-In-Time)</span>
 <span class="x">// Mejoras automáticas de rendimiento</span>
@@ -542,7 +539,7 @@
 </div>
 </section>
 <section id="php-8-1-8-3">
-<h1><a class="toc-backref" href="#id17" role="doc-backlink">PHP 8.1-8.3</a><a class="headerlink" href="#php-8-1-8-3" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id17" role="doc-backlink">PHP 8.1-8.3</a><a class="headerlink" href="#php-8-1-8-3" title="Enlace permanente a este encabezado"></a></h1>
 <p>Han continuado refinando el lenguaje con:</p>
 <ul class="simple">
 <li><p><strong>Enums</strong>:</p></li>
@@ -559,26 +556,26 @@
 <li><p><strong>Mejoras en el sistema de tipos</strong></p></li>
 </ul>
 <section id="lecciones-para-el-desarrollador-moderno">
-<h2><a class="toc-backref" href="#id18" role="doc-backlink">Lecciones para el Desarrollador Moderno</a><a class="headerlink" href="#lecciones-para-el-desarrollador-moderno" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Lecciones para el Desarrollador Moderno</a><a class="headerlink" href="#lecciones-para-el-desarrollador-moderno" title="Enlace permanente a este encabezado"></a></h2>
 </section>
 </section>
 <section id="la-importancia-de-la-comunidad">
-<h1><a class="toc-backref" href="#id19" role="doc-backlink">1. La Importancia de la Comunidad</a><a class="headerlink" href="#la-importancia-de-la-comunidad" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id19" role="doc-backlink">1. La Importancia de la Comunidad</a><a class="headerlink" href="#la-importancia-de-la-comunidad" title="Enlace permanente a este encabezado"></a></h1>
 <p>PHP no habría llegado donde está sin una comunidad activa. Desde los primeros días de Lerdorf hasta las contribuciones modernas de miles de desarrolladores, la colaboración ha sido clave.</p>
 </section>
 <section id="evolucion-constante">
-<h1><a class="toc-backref" href="#id20" role="doc-backlink">2. Evolución Constante</a><a class="headerlink" href="#evolucion-constante" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id20" role="doc-backlink">2. Evolución Constante</a><a class="headerlink" href="#evolucion-constante" title="Enlace permanente a este encabezado"></a></h1>
 <p>PHP ha sabido adaptarse a las necesidades cambiantes del desarrollo web. Desde sus humildes comienzos como herramienta para páginas personales hasta convertirse en el motor de sitios como <em>Facebook</em>, <em>WordPress</em> y <em>Drupal</em>.</p>
 </section>
 <section id="pragmatismo-sobre-pureza">
-<h1><a class="toc-backref" href="#id21" role="doc-backlink">3. Pragmatismo sobre Pureza</a><a class="headerlink" href="#pragmatismo-sobre-pureza" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id21" role="doc-backlink">3. Pragmatismo sobre Pureza</a><a class="headerlink" href="#pragmatismo-sobre-pureza" title="Enlace permanente a este encabezado"></a></h1>
 <p>PHP ha priorizado la practicidad sobre la elegancia teórica. Aunque esto ha resultado en algunas inconsistencias, también ha mantenido el lenguaje accesible y útil para desarrolladores de todos los niveles.</p>
 </section>
 <section id="el-valor-de-la-refactorizacion">
-<h1><a class="toc-backref" href="#id22" role="doc-backlink">4. El Valor de la Refactorización</a><a class="headerlink" href="#el-valor-de-la-refactorizacion" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id22" role="doc-backlink">4. El Valor de la Refactorización</a><a class="headerlink" href="#el-valor-de-la-refactorizacion" title="Enlace permanente a este encabezado"></a></h1>
 <p>Los múltiples rewrites del motor de PHP demuestran que a veces es necesario reconstruir desde cero para avanzar. Como desarrolladores, no debemos temer refactorizar cuando es necesario.</p>
 <section id="reflexion-final">
-<h2><a class="toc-backref" href="#id23" role="doc-backlink">Reflexión Final</a><a class="headerlink" href="#reflexion-final" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">Reflexión Final</a><a class="headerlink" href="#reflexion-final" title="Enlace permanente a este encabezado"></a></h2>
 <p>PHP ha pasado de ser un conjunto de scripts personales a alimentar aproximadamente el <strong>78%</strong> de todos los sitios web que utilizan un lenguaje de programación del lado del servidor. Su historia nos enseña que el éxito en el desarrollo de software a menudo viene de:</p>
 <ul class="simple">
 <li><p>Resolver problemas reales</p></li>
@@ -593,7 +590,7 @@
 </div></blockquote>
 </section>
 <section id="referencias-y-recursos-adicionales">
-<h2><a class="toc-backref" href="#id24" role="doc-backlink">Referencias y Recursos Adicionales</a><a class="headerlink" href="#referencias-y-recursos-adicionales" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id24" role="doc-backlink">Referencias y Recursos Adicionales</a><a class="headerlink" href="#referencias-y-recursos-adicionales" title="Enlace permanente a este encabezado"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.php.net/docs.php">Documentación oficial de PHP</a></p></li>
 <li><p><a class="reference external" href="https://phptherightway.com/">PHP: The Right Way</a></p></li>

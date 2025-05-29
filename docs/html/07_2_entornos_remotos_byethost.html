@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="es" data-content_root="./">
+<html class="writer-html5" lang="es">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>7.2 Fundamentos y Uso de Entornos de Prueba Remotos (ByetHost) &mdash; documentación de Higgs - 7.0.2</title>
-      <link rel="stylesheet" type="text/css" href="static/pygments.css?v=67a8c293" />
-      <link rel="stylesheet" type="text/css" href="static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="static/css/citheme.css" />
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/citheme.css" type="text/css" />
 
   
     <link rel="shortcut icon" href="static/favicon.ico"/>
@@ -16,12 +16,13 @@
     <script src="static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="static/jquery.js?v=5d32c60e"></script>
-        <script src="static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="static/documentation_options.js?v=e20d7d46"></script>
-        <script src="static/doctools.js?v=888ff710"></script>
-        <script src="static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="static/translations.js?v=efdbd0b9"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+        <script src="static/translations.js"></script>
         <script src="static/js/citheme.js"></script>
         <script src="static/js/carbon.js"></script>
     <script src="static/js/theme.js"></script>
@@ -55,10 +56,40 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="00_introduccion.html">Curso Completo de PHP desde Cero</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#informacion-del-curso">Información del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#objetivos-del-curso">Objetivos del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#metodologia">Metodología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_informacion_curso.html">Información del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_objetivos_curso.html">Objetivos del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_metodologia.html">Metodología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html">Historia de PHP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#los-humildes-comienzos-1994-1995">Los Humildes Comienzos (1994-1995)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-era-de-la-colaboracion-1997-1998">La Era de la Colaboración (1997-1998)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#el-motor-zend-y-la-madurez-1999-2004">El Motor Zend y la Madurez (1999-2004)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-revolucion-orientada-a-objetos-2004-2009">La Revolución Orientada a Objetos (2004-2009)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-era-moderna-2009-2015">La Era Moderna (2009-2015)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#namespaces">Namespaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#closures-funciones-anonimas">Closures (funciones anónimas)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#traits-php-5-4">Traits (PHP 5.4)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#el-salto-generacional-php-7-2015">El Salto Generacional: PHP 7 (2015)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#mejoras-de-rendimiento">Mejoras de Rendimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#nuevas-caracteristicas">Nuevas Características</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#php-en-la-era-moderna-2017-presente">PHP en la Era Moderna (2017-presente)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-7-1-7-4">PHP 7.1-7.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-8-0-2020">PHP 8.0 (2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-8-1-8-3">PHP 8.1-8.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#lecciones-para-el-desarrollador-moderno">Lecciones para el Desarrollador Moderno</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#la-importancia-de-la-comunidad">1. La Importancia de la Comunidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#evolucion-constante">2. Evolución Constante</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#pragmatismo-sobre-pureza">3. Pragmatismo sobre Pureza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#el-valor-de-la-refactorizacion">4. El Valor de la Refactorización</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#reflexion-final">Reflexión Final</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#referencias-y-recursos-adicionales">Referencias y Recursos Adicionales</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="01_introduccion_programacion_php.html">1: Introducción a la Programación y PHP</a><ul>
@@ -232,7 +263,7 @@
            <div itemprop="articleBody">
              
   <section id="fundamentos-y-uso-de-entornos-de-prueba-remotos-byethost">
-<h1>7.2 Fundamentos y Uso de Entornos de Prueba Remotos (ByetHost)<a class="headerlink" href="#fundamentos-y-uso-de-entornos-de-prueba-remotos-byethost" title="Link to this heading"></a></h1>
+<h1>7.2 Fundamentos y Uso de Entornos de Prueba Remotos (ByetHost)<a class="headerlink" href="#fundamentos-y-uso-de-entornos-de-prueba-remotos-byethost" title="Enlace permanente a este encabezado"></a></h1>
 <p>Un <strong>entorno de prueba remoto</strong> es una instancia de tu aplicación PHP y su infraestructura de soporte (servidor web, base de datos, etc.) que se encuentra alojada en un servidor accesible a través de Internet, fuera de tu máquina de desarrollo local. Este tipo de entorno juega un papel crucial en las etapas finales de prueba antes del despliegue a producción, o para escenarios específicos de colaboración y demostración.</p>
 <p><strong>¿Por Qué Utilizar un Entorno Remoto para Pruebas?</strong></p>
 <p>Mientras que los entornos locales son excelentes para el desarrollo rápido y la depuración inicial, los entornos remotos ofrecen ventajas distintas:</p>
@@ -257,10 +288,10 @@
 </ul>
 <p>En esta sección, nos enfocaremos en una opción de <strong>bajo costo (gratuita)</strong> para obtener experiencia con entornos remotos: el uso de proveedores de hosting compartido gratuito como <strong>ByetHost</strong>. Si bien estos no reemplazarán un entorno de staging profesional para aplicaciones críticas, son excelentes para aprender los conceptos de despliegue remoto, pruebas de compatibilidad básica y para compartir pequeños proyectos.</p>
 <section id="pruebas-en-entorno-remoto-con-byethost-o-similar">
-<h2>Pruebas en Entorno Remoto con ByetHost (o similar)<a class="headerlink" href="#pruebas-en-entorno-remoto-con-byethost-o-similar" title="Link to this heading"></a></h2>
+<h2>Pruebas en Entorno Remoto con ByetHost (o similar)<a class="headerlink" href="#pruebas-en-entorno-remoto-con-byethost-o-similar" title="Enlace permanente a este encabezado"></a></h2>
 <p>Probar tu aplicación en un entorno remoto es crucial antes del despliegue final, ya que te permite verificar su comportamiento en una configuración similar a la de un servidor de producción real. ByetHost es un proveedor de hosting gratuito que ofrece PHP y MySQL, siendo una opción viable para estas pruebas.</p>
 <section id="que-es-byethost-y-por-que-usarlo-para-pruebas">
-<h3>¿Qué es ByetHost y por qué usarlo para pruebas?<a class="headerlink" href="#que-es-byethost-y-por-que-usarlo-para-pruebas" title="Link to this heading"></a></h3>
+<h3>¿Qué es ByetHost y por qué usarlo para pruebas?<a class="headerlink" href="#que-es-byethost-y-por-que-usarlo-para-pruebas" title="Enlace permanente a este encabezado"></a></h3>
 <p>ByetHost (byet.host) ofrece servicios de hosting web gratuito que incluyen:
 -   Soporte para PHP (generalmente múltiples versiones)
 -   Bases de datos MySQL
@@ -274,7 +305,7 @@
 -   Compartir una versión de prueba funcional con otros (clientes, colaboradores).</p>
 </section>
 <section id="pasos-generales-para-usar-byethost-o-un-servicio-similar">
-<h3>Pasos Generales para Usar ByetHost (o un servicio similar):<a class="headerlink" href="#pasos-generales-para-usar-byethost-o-un-servicio-similar" title="Link to this heading"></a></h3>
+<h3>Pasos Generales para Usar ByetHost (o un servicio similar):<a class="headerlink" href="#pasos-generales-para-usar-byethost-o-un-servicio-similar" title="Enlace permanente a este encabezado"></a></h3>
 <ol class="arabic simple">
 <li><p><strong>Registro:</strong>
 -   Visita el sitio web de ByetHost (<code class="docutils literal notranslate"><span class="pre">https://byet.host/</span></code>) o el proveedor de hosting gratuito de tu elección.
@@ -304,7 +335,7 @@
 </ol>
 </section>
 <section id="consideraciones-al-usar-hosting-gratuito-para-pruebas">
-<h3>Consideraciones al Usar Hosting Gratuito para Pruebas:<a class="headerlink" href="#consideraciones-al-usar-hosting-gratuito-para-pruebas" title="Link to this heading"></a></h3>
+<h3>Consideraciones al Usar Hosting Gratuito para Pruebas:<a class="headerlink" href="#consideraciones-al-usar-hosting-gratuito-para-pruebas" title="Enlace permanente a este encabezado"></a></h3>
 <ul class="simple">
 <li><p><strong>Limitaciones:</strong> Los servicios gratuitos suelen tener limitaciones en cuanto a espacio en disco, ancho de banda, tamaño de la base de datos, potencia de CPU, y número de archivos (inodes).</p></li>
 <li><p><strong>Rendimiento:</strong> El rendimiento puede ser inferior al de un hosting de pago o tu entorno local.</p></li>
@@ -316,7 +347,7 @@
 <p>A pesar de las limitaciones, los hostings gratuitos son una herramienta valiosa para una etapa de prueba intermedia antes de pasar a un hosting de pago o al despliegue final, especialmente para proyectos personales o pequeños.</p>
 </section>
 <section id="alternativas-a-byethost">
-<h3>Alternativas a ByetHost:<a class="headerlink" href="#alternativas-a-byethost" title="Link to this heading"></a></h3>
+<h3>Alternativas a ByetHost:<a class="headerlink" href="#alternativas-a-byethost" title="Enlace permanente a este encabezado"></a></h3>
 <p>Existen otros proveedores de hosting gratuito que ofrecen servicios similares, como:
 -   000webhost
 -   InfinityFree

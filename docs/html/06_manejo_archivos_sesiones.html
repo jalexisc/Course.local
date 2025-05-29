@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="es" data-content_root="./">
+<html class="writer-html5" lang="es">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>6: Manejo de Archivos y Sesiones &mdash; documentación de Higgs - 7.0.2</title>
-      <link rel="stylesheet" type="text/css" href="static/pygments.css?v=67a8c293" />
-      <link rel="stylesheet" type="text/css" href="static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="static/css/citheme.css" />
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/citheme.css" type="text/css" />
 
   
     <link rel="shortcut icon" href="static/favicon.ico"/>
@@ -16,12 +16,13 @@
     <script src="static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="static/jquery.js?v=5d32c60e"></script>
-        <script src="static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="static/documentation_options.js?v=e20d7d46"></script>
-        <script src="static/doctools.js?v=888ff710"></script>
-        <script src="static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="static/translations.js?v=efdbd0b9"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+        <script src="static/translations.js"></script>
         <script src="static/js/citheme.js"></script>
         <script src="static/js/carbon.js"></script>
     <script src="static/js/theme.js"></script>
@@ -56,10 +57,40 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="00_introduccion.html">Curso Completo de PHP desde Cero</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#informacion-del-curso">Información del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#objetivos-del-curso">Objetivos del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#metodologia">Metodología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_informacion_curso.html">Información del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_objetivos_curso.html">Objetivos del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_metodologia.html">Metodología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html">Historia de PHP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#los-humildes-comienzos-1994-1995">Los Humildes Comienzos (1994-1995)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-era-de-la-colaboracion-1997-1998">La Era de la Colaboración (1997-1998)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#el-motor-zend-y-la-madurez-1999-2004">El Motor Zend y la Madurez (1999-2004)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-revolucion-orientada-a-objetos-2004-2009">La Revolución Orientada a Objetos (2004-2009)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-era-moderna-2009-2015">La Era Moderna (2009-2015)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#namespaces">Namespaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#closures-funciones-anonimas">Closures (funciones anónimas)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#traits-php-5-4">Traits (PHP 5.4)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#el-salto-generacional-php-7-2015">El Salto Generacional: PHP 7 (2015)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#mejoras-de-rendimiento">Mejoras de Rendimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#nuevas-caracteristicas">Nuevas Características</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#php-en-la-era-moderna-2017-presente">PHP en la Era Moderna (2017-presente)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-7-1-7-4">PHP 7.1-7.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-8-0-2020">PHP 8.0 (2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-8-1-8-3">PHP 8.1-8.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#lecciones-para-el-desarrollador-moderno">Lecciones para el Desarrollador Moderno</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#la-importancia-de-la-comunidad">1. La Importancia de la Comunidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#evolucion-constante">2. Evolución Constante</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#pragmatismo-sobre-pureza">3. Pragmatismo sobre Pureza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#el-valor-de-la-refactorizacion">4. El Valor de la Refactorización</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#reflexion-final">Reflexión Final</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#referencias-y-recursos-adicionales">Referencias y Recursos Adicionales</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="01_introduccion_programacion_php.html">1: Introducción a la Programación y PHP</a><ul>
@@ -232,11 +263,11 @@
            <div itemprop="articleBody">
              
   <section id="manejo-de-archivos-y-sesiones">
-<h1>6: Manejo de Archivos y Sesiones<a class="headerlink" href="#manejo-de-archivos-y-sesiones" title="Link to this heading"></a></h1>
+<h1>6: Manejo de Archivos y Sesiones<a class="headerlink" href="#manejo-de-archivos-y-sesiones" title="Enlace permanente a este encabezado"></a></h1>
 <section id="manipulacion-de-archivos">
-<h2>6.1 Manipulación de Archivos<a class="headerlink" href="#manipulacion-de-archivos" title="Link to this heading"></a></h2>
+<h2>6.1 Manipulación de Archivos<a class="headerlink" href="#manipulacion-de-archivos" title="Enlace permanente a este encabezado"></a></h2>
 <section id="leer-archivos">
-<h3>Leer Archivos:<a class="headerlink" href="#leer-archivos" title="Link to this heading"></a></h3>
+<h3>Leer Archivos:<a class="headerlink" href="#leer-archivos" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Leer archivo completo</span>
 <span class="nv">$contenido</span> <span class="o">=</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">&#39;datos.txt&#39;</span><span class="p">);</span>
@@ -261,7 +292,7 @@
 </div>
 </section>
 <section id="escribir-archivos">
-<h3>Escribir Archivos:<a class="headerlink" href="#escribir-archivos" title="Link to this heading"></a></h3>
+<h3>Escribir Archivos:<a class="headerlink" href="#escribir-archivos" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Escribir texto simple</span>
 <span class="nv">$texto</span> <span class="o">=</span> <span class="s2">&quot;¡Hola, mundo desde PHP!&quot;</span><span class="p">;</span>
@@ -284,9 +315,9 @@
 </section>
 </section>
 <section id="sistema-de-registro-de-usuarios">
-<h2>6.2 Sistema de Registro de Usuarios<a class="headerlink" href="#sistema-de-registro-de-usuarios" title="Link to this heading"></a></h2>
+<h2>6.2 Sistema de Registro de Usuarios<a class="headerlink" href="#sistema-de-registro-de-usuarios" title="Enlace permanente a este encabezado"></a></h2>
 <section id="registro-archivo-php">
-<h3>registro_archivo.php:<a class="headerlink" href="#registro-archivo-php" title="Link to this heading"></a></h3>
+<h3>registro_archivo.php:<a class="headerlink" href="#registro-archivo-php" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$mensaje</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 

@@ -66,7 +66,18 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-htmlstatic_path = ['static']
+html_static_path = ['static']
+
+# Specify the directory where static files should be copied to and how they should be referenced
+html_static_path_suffix = ''
+html_use_static_prefix = False
+html_context = {
+    'css_files': [
+        'static/pygments.css',
+        'static/css/theme.css',
+        'static/css/citheme.css',
+    ],
+}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -143,4 +154,5 @@ epub_copyright = copyright
 
 
 html_baseurl = 'https://higgs.com.co/'
+
 

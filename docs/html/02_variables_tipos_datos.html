@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="es" data-content_root="./">
+<html class="writer-html5" lang="es">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2: Variables y Tipos de Datos &mdash; documentación de Higgs - 7.0.2</title>
-      <link rel="stylesheet" type="text/css" href="static/pygments.css?v=67a8c293" />
-      <link rel="stylesheet" type="text/css" href="static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="static/css/citheme.css" />
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/citheme.css" type="text/css" />
 
   
     <link rel="shortcut icon" href="static/favicon.ico"/>
@@ -16,12 +16,13 @@
     <script src="static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="static/jquery.js?v=5d32c60e"></script>
-        <script src="static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="static/documentation_options.js?v=e20d7d46"></script>
-        <script src="static/doctools.js?v=888ff710"></script>
-        <script src="static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="static/translations.js?v=efdbd0b9"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+        <script src="static/translations.js"></script>
         <script src="static/js/citheme.js"></script>
         <script src="static/js/carbon.js"></script>
     <script src="static/js/theme.js"></script>
@@ -56,10 +57,40 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="00_introduccion.html">Curso Completo de PHP desde Cero</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#informacion-del-curso">Información del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#objetivos-del-curso">Objetivos del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#metodologia">Metodología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_informacion_curso.html">Información del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_objetivos_curso.html">Objetivos del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_metodologia.html">Metodología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html">Historia de PHP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#los-humildes-comienzos-1994-1995">Los Humildes Comienzos (1994-1995)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-era-de-la-colaboracion-1997-1998">La Era de la Colaboración (1997-1998)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#el-motor-zend-y-la-madurez-1999-2004">El Motor Zend y la Madurez (1999-2004)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-revolucion-orientada-a-objetos-2004-2009">La Revolución Orientada a Objetos (2004-2009)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-era-moderna-2009-2015">La Era Moderna (2009-2015)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#namespaces">Namespaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#closures-funciones-anonimas">Closures (funciones anónimas)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#traits-php-5-4">Traits (PHP 5.4)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#el-salto-generacional-php-7-2015">El Salto Generacional: PHP 7 (2015)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#mejoras-de-rendimiento">Mejoras de Rendimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#nuevas-caracteristicas">Nuevas Características</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#php-en-la-era-moderna-2017-presente">PHP en la Era Moderna (2017-presente)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-7-1-7-4">PHP 7.1-7.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-8-0-2020">PHP 8.0 (2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-8-1-8-3">PHP 8.1-8.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#lecciones-para-el-desarrollador-moderno">Lecciones para el Desarrollador Moderno</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#la-importancia-de-la-comunidad">1. La Importancia de la Comunidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#evolucion-constante">2. Evolución Constante</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#pragmatismo-sobre-pureza">3. Pragmatismo sobre Pureza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#el-valor-de-la-refactorizacion">4. El Valor de la Refactorización</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#reflexion-final">Reflexión Final</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#referencias-y-recursos-adicionales">Referencias y Recursos Adicionales</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="01_introduccion_programacion_php.html">1: Introducción a la Programación y PHP</a><ul>
@@ -232,9 +263,9 @@
            <div itemprop="articleBody">
              
   <section id="variables-y-tipos-de-datos">
-<h1>2: Variables y Tipos de Datos<a class="headerlink" href="#variables-y-tipos-de-datos" title="Link to this heading"></a></h1>
+<h1>2: Variables y Tipos de Datos<a class="headerlink" href="#variables-y-tipos-de-datos" title="Enlace permanente a este encabezado"></a></h1>
 <section id="variables-en-php">
-<h2>2.1 Variables en PHP<a class="headerlink" href="#variables-en-php" title="Link to this heading"></a></h2>
+<h2>2.1 Variables en PHP<a class="headerlink" href="#variables-en-php" title="Enlace permanente a este encabezado"></a></h2>
 <p>Las variables son contenedores que almacenan datos. En PHP, las variables comienzan con el símbolo <code class="docutils literal notranslate"><span class="pre">$</span></code>.</p>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="s2">&quot;Juan&quot;</span><span class="p">;</span>
@@ -245,7 +276,7 @@
 </pre></div>
 </div>
 <section id="reglas-para-variables">
-<h3>Reglas para Variables:<a class="headerlink" href="#reglas-para-variables" title="Link to this heading"></a></h3>
+<h3>Reglas para Variables:<a class="headerlink" href="#reglas-para-variables" title="Enlace permanente a este encabezado"></a></h3>
 <ul class="simple">
 <li><p>Comienzan con <code class="docutils literal notranslate"><span class="pre">$</span></code> seguido de una letra o guión bajo</p></li>
 <li><p>Pueden contener letras, números y guiones bajos</p></li>
@@ -255,9 +286,9 @@
 </section>
 </section>
 <section id="tipos-de-datos">
-<h2>2.2 Tipos de Datos<a class="headerlink" href="#tipos-de-datos" title="Link to this heading"></a></h2>
+<h2>2.2 Tipos de Datos<a class="headerlink" href="#tipos-de-datos" title="Enlace permanente a este encabezado"></a></h2>
 <section id="tipos-primitivos">
-<h3>Tipos Primitivos:<a class="headerlink" href="#tipos-primitivos" title="Link to this heading"></a></h3>
+<h3>Tipos Primitivos:<a class="headerlink" href="#tipos-primitivos" title="Enlace permanente a este encabezado"></a></h3>
 <p><strong>String (Cadena de texto):</strong></p>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="s2">&quot;María García&quot;</span><span class="p">;</span>
@@ -293,9 +324,9 @@
 </section>
 </section>
 <section id="operaciones-con-variables">
-<h2>2.3 Operaciones con Variables<a class="headerlink" href="#operaciones-con-variables" title="Link to this heading"></a></h2>
+<h2>2.3 Operaciones con Variables<a class="headerlink" href="#operaciones-con-variables" title="Enlace permanente a este encabezado"></a></h2>
 <section id="concatenacion-de-strings">
-<h3>Concatenación de Strings:<a class="headerlink" href="#concatenacion-de-strings" title="Link to this heading"></a></h3>
+<h3>Concatenación de Strings:<a class="headerlink" href="#concatenacion-de-strings" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="s2">&quot;Ana&quot;</span><span class="p">;</span>
 <span class="nv">$apellido</span> <span class="o">=</span> <span class="s2">&quot;López&quot;</span><span class="p">;</span>
@@ -306,7 +337,7 @@
 </div>
 </section>
 <section id="interpolacion-de-variables">
-<h3>Interpolación de Variables:<a class="headerlink" href="#interpolacion-de-variables" title="Link to this heading"></a></h3>
+<h3>Interpolación de Variables:<a class="headerlink" href="#interpolacion-de-variables" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$producto</span> <span class="o">=</span> <span class="s2">&quot;Laptop&quot;</span><span class="p">;</span>
 <span class="nv">$precio</span> <span class="o">=</span> <span class="mf">899.99</span><span class="p">;</span>
@@ -317,7 +348,7 @@
 </section>
 </section>
 <section id="constantes">
-<h2>2.4 Constantes<a class="headerlink" href="#constantes" title="Link to this heading"></a></h2>
+<h2>2.4 Constantes<a class="headerlink" href="#constantes" title="Enlace permanente a este encabezado"></a></h2>
 <p>Las constantes son valores que no cambian durante la ejecución:</p>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nb">define</span><span class="p">(</span><span class="s2">&quot;SITIO_NOMBRE&quot;</span><span class="p">,</span> <span class="s2">&quot;Mi Blog Personal&quot;</span><span class="p">);</span>
@@ -331,7 +362,7 @@
 </div>
 </section>
 <section id="conversion-de-tipos">
-<h2>2.5 Conversión de Tipos<a class="headerlink" href="#conversion-de-tipos" title="Link to this heading"></a></h2>
+<h2>2.5 Conversión de Tipos<a class="headerlink" href="#conversion-de-tipos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$numero_texto</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span><span class="p">;</span>
 <span class="nv">$numero_entero</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$numero_texto</span><span class="p">;</span>
@@ -346,7 +377,7 @@
 </div>
 </section>
 <section id="ejercicios-semana-2">
-<h2>Ejercicios Semana 2:<a class="headerlink" href="#ejercicios-semana-2" title="Link to this heading"></a></h2>
+<h2>Ejercicios Semana 2:<a class="headerlink" href="#ejercicios-semana-2" title="Enlace permanente a este encabezado"></a></h2>
 <ol class="arabic simple">
 <li><p><strong>Calculadora Básica:</strong> Crear variables para dos números y mostrar suma, resta, multiplicación y división</p></li>
 <li><p><strong>Información Personal:</strong> Crear un perfil con nombre, edad, ciudad y mostrar en formato organizado</p></li>

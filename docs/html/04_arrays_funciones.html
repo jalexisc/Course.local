@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="es" data-content_root="./">
+<html class="writer-html5" lang="es">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>4: Arrays y Funciones &mdash; documentación de Higgs - 7.0.2</title>
-      <link rel="stylesheet" type="text/css" href="static/pygments.css?v=67a8c293" />
-      <link rel="stylesheet" type="text/css" href="static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="static/css/citheme.css" />
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/citheme.css" type="text/css" />
 
   
     <link rel="shortcut icon" href="static/favicon.ico"/>
@@ -16,12 +16,13 @@
     <script src="static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="static/jquery.js?v=5d32c60e"></script>
-        <script src="static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="static/documentation_options.js?v=e20d7d46"></script>
-        <script src="static/doctools.js?v=888ff710"></script>
-        <script src="static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="static/translations.js?v=efdbd0b9"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+        <script src="static/translations.js"></script>
         <script src="static/js/citheme.js"></script>
         <script src="static/js/carbon.js"></script>
     <script src="static/js/theme.js"></script>
@@ -56,10 +57,40 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="00_introduccion.html">Curso Completo de PHP desde Cero</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#informacion-del-curso">Información del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#objetivos-del-curso">Objetivos del Curso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_introduccion.html#metodologia">Metodología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_informacion_curso.html">Información del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_objetivos_curso.html">Objetivos del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_metodologia.html">Metodología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html">Historia de PHP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#los-humildes-comienzos-1994-1995">Los Humildes Comienzos (1994-1995)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-era-de-la-colaboracion-1997-1998">La Era de la Colaboración (1997-1998)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#el-motor-zend-y-la-madurez-1999-2004">El Motor Zend y la Madurez (1999-2004)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-revolucion-orientada-a-objetos-2004-2009">La Revolución Orientada a Objetos (2004-2009)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#la-era-moderna-2009-2015">La Era Moderna (2009-2015)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#namespaces">Namespaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#closures-funciones-anonimas">Closures (funciones anónimas)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#traits-php-5-4">Traits (PHP 5.4)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#el-salto-generacional-php-7-2015">El Salto Generacional: PHP 7 (2015)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#mejoras-de-rendimiento">Mejoras de Rendimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#nuevas-caracteristicas">Nuevas Características</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#php-en-la-era-moderna-2017-presente">PHP en la Era Moderna (2017-presente)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-7-1-7-4">PHP 7.1-7.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-8-0-2020">PHP 8.0 (2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#php-8-1-8-3">PHP 8.1-8.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#lecciones-para-el-desarrollador-moderno">Lecciones para el Desarrollador Moderno</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#la-importancia-de-la-comunidad">1. La Importancia de la Comunidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#evolucion-constante">2. Evolución Constante</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#pragmatismo-sobre-pureza">3. Pragmatismo sobre Pureza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_historia_php.html#el-valor-de-la-refactorizacion">4. El Valor de la Refactorización</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#reflexion-final">Reflexión Final</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_historia_php.html#referencias-y-recursos-adicionales">Referencias y Recursos Adicionales</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="01_introduccion_programacion_php.html">1: Introducción a la Programación y PHP</a><ul>
@@ -232,12 +263,12 @@
            <div itemprop="articleBody">
              
   <section id="arrays-y-funciones">
-<h1>4: Arrays y Funciones<a class="headerlink" href="#arrays-y-funciones" title="Link to this heading"></a></h1>
+<h1>4: Arrays y Funciones<a class="headerlink" href="#arrays-y-funciones" title="Enlace permanente a este encabezado"></a></h1>
 <section id="arrays-arreglos">
-<h2>4.1 Arrays (Arreglos)<a class="headerlink" href="#arrays-arreglos" title="Link to this heading"></a></h2>
+<h2>4.1 Arrays (Arreglos)<a class="headerlink" href="#arrays-arreglos" title="Enlace permanente a este encabezado"></a></h2>
 <p>Los arrays son estructuras que pueden almacenar múltiples valores.</p>
 <section id="arrays-indexados">
-<h3>Arrays Indexados:<a class="headerlink" href="#arrays-indexados" title="Link to this heading"></a></h3>
+<h3>Arrays Indexados:<a class="headerlink" href="#arrays-indexados" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$frutas</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">&quot;manzana&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;naranja&quot;</span><span class="p">);</span>
 <span class="c1">// O sintaxis corta (PHP 5.4+)</span>
@@ -250,7 +281,7 @@
 </div>
 </section>
 <section id="arrays-asociativos">
-<h3>Arrays Asociativos:<a class="headerlink" href="#arrays-asociativos" title="Link to this heading"></a></h3>
+<h3>Arrays Asociativos:<a class="headerlink" href="#arrays-asociativos" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$persona</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
     <span class="s2">&quot;nombre&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;Carlos&quot;</span><span class="p">,</span>
@@ -272,7 +303,7 @@
 </div>
 </section>
 <section id="arrays-multidimensionales">
-<h3>Arrays Multidimensionales:<a class="headerlink" href="#arrays-multidimensionales" title="Link to this heading"></a></h3>
+<h3>Arrays Multidimensionales:<a class="headerlink" href="#arrays-multidimensionales" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$estudiantes</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span>
@@ -293,9 +324,9 @@
 </section>
 </section>
 <section id="operaciones-con-arrays">
-<h2>4.2 Operaciones con Arrays<a class="headerlink" href="#operaciones-con-arrays" title="Link to this heading"></a></h2>
+<h2>4.2 Operaciones con Arrays<a class="headerlink" href="#operaciones-con-arrays" title="Enlace permanente a este encabezado"></a></h2>
 <section id="agregar-elementos">
-<h3>Agregar Elementos:<a class="headerlink" href="#agregar-elementos" title="Link to this heading"></a></h3>
+<h3>Agregar Elementos:<a class="headerlink" href="#agregar-elementos" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
 
@@ -312,7 +343,7 @@
 </div>
 </section>
 <section id="recorrer-arrays">
-<h3>Recorrer Arrays:<a class="headerlink" href="#recorrer-arrays" title="Link to this heading"></a></h3>
+<h3>Recorrer Arrays:<a class="headerlink" href="#recorrer-arrays" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$frutas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;manzana&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;naranja&quot;</span><span class="p">];</span>
 
@@ -336,7 +367,7 @@
 </section>
 </section>
 <section id="funciones-utiles-para-arrays">
-<h2>4.3 Funciones Útiles para Arrays<a class="headerlink" href="#funciones-utiles-para-arrays" title="Link to this heading"></a></h2>
+<h2>4.3 Funciones Útiles para Arrays<a class="headerlink" href="#funciones-utiles-para-arrays" title="Enlace permanente a este encabezado"></a></h2>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">];</span>
 
@@ -364,9 +395,9 @@
 </div>
 </section>
 <section id="funciones-definidas-por-el-usuario">
-<h2>4.4 Funciones Definidas por el Usuario<a class="headerlink" href="#funciones-definidas-por-el-usuario" title="Link to this heading"></a></h2>
+<h2>4.4 Funciones Definidas por el Usuario<a class="headerlink" href="#funciones-definidas-por-el-usuario" title="Enlace permanente a este encabezado"></a></h2>
 <section id="funcion-basica">
-<h3>Función Básica:<a class="headerlink" href="#funcion-basica" title="Link to this heading"></a></h3>
+<h3>Función Básica:<a class="headerlink" href="#funcion-basica" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="k">function</span> <span class="nf">saludar</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">echo</span> <span class="s2">&quot;¡Hola desde una función!&quot;</span><span class="p">;</span>
@@ -379,7 +410,7 @@
 </div>
 </section>
 <section id="funciones-con-parametros">
-<h3>Funciones con Parámetros:<a class="headerlink" href="#funciones-con-parametros" title="Link to this heading"></a></h3>
+<h3>Funciones con Parámetros:<a class="headerlink" href="#funciones-con-parametros" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="k">function</span> <span class="nf">saludar_persona</span><span class="p">(</span><span class="nv">$nombre</span><span class="p">,</span> <span class="nv">$apellido</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nv">$apellido</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="p">{</span>
@@ -396,7 +427,7 @@
 </div>
 </section>
 <section id="funciones-que-retornan-valores">
-<h3>Funciones que Retornan Valores:<a class="headerlink" href="#funciones-que-retornan-valores" title="Link to this heading"></a></h3>
+<h3>Funciones que Retornan Valores:<a class="headerlink" href="#funciones-que-retornan-valores" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="k">function</span> <span class="nf">sumar</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nv">$a</span> <span class="o">+</span> <span class="nv">$b</span><span class="p">;</span>
@@ -416,7 +447,7 @@
 </div>
 </section>
 <section id="funciones-con-arrays">
-<h3>Funciones con Arrays:<a class="headerlink" href="#funciones-con-arrays" title="Link to this heading"></a></h3>
+<h3>Funciones con Arrays:<a class="headerlink" href="#funciones-con-arrays" title="Enlace permanente a este encabezado"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="k">function</span> <span class="nf">obtener_promedio</span><span class="p">(</span><span class="nv">$calificaciones</span><span class="p">)</span> <span class="p">{</span>
     <span class="nv">$suma</span> <span class="o">=</span> <span class="nb">array_sum</span><span class="p">(</span><span class="nv">$calificaciones</span><span class="p">);</span>
@@ -437,7 +468,7 @@
 </section>
 </section>
 <section id="alcance-de-variables-scope">
-<h2>4.5 Alcance de Variables (Scope)<a class="headerlink" href="#alcance-de-variables-scope" title="Link to this heading"></a></h2>
+<h2>4.5 Alcance de Variables (Scope)<a class="headerlink" href="#alcance-de-variables-scope" title="Enlace permanente a este encabezado"></a></h2>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$variable_global</span> <span class="o">=</span> <span class="s2">&quot;Soy global&quot;</span><span class="p">;</span>
 
@@ -456,7 +487,7 @@
 </div>
 </section>
 <section id="ejercicios-semana-4">
-<h2>Ejercicios Semana 4:<a class="headerlink" href="#ejercicios-semana-4" title="Link to this heading"></a></h2>
+<h2>Ejercicios Semana 4:<a class="headerlink" href="#ejercicios-semana-4" title="Enlace permanente a este encabezado"></a></h2>
 <ol class="arabic simple">
 <li><p><strong>Gestión de Estudiantes:</strong> Crear array de estudiantes con calificaciones y calcular promedios</p></li>
 <li><p><strong>Inventario Simple:</strong> Sistema para agregar, eliminar y buscar productos</p></li>
