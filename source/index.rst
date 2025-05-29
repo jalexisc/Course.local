@@ -16,10 +16,6 @@ Massachusetts Institute of Technology (MIT)
 :Institución: Massachusetts Institute of Technology (MIT)  
 :Fecha: Mayo 2025  
 
-.. contents::
-   :depth: 2
-   :local:
-
 ¡Estimados estudiantes, bienvenidos!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
