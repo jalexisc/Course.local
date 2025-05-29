@@ -22,7 +22,7 @@ author = 'Jose Alexis Correa Valencia'
 year_now = datetime.date.today().year
 copyright = '2012-' + str(year_now) + ' Jose Alexis Correa Valencia'
 language = 'es'
-version = '7.0'
+version = 'Curso de PHP8.4 By @jalexiscv'
 release = '7.0.2'
 
 # -- General configuration ---------------------------------------------------
