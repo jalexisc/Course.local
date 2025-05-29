@@ -8,6 +8,9 @@ Bienvenidos al Curso de PHP 8.4
 Massachusetts Institute of Technology (MIT)
 -------------------------------------------
 
+.. image:: /static/logo-mit.png 
+   :alt: Logo del Massachusetts Institute of Technology (MIT)
+
 :Profesor: **José Alexis Correa Valencia**  
 :LinkedIn: `linkedin.com/in/jalexiscv <https://www.linkedin.com/in/jalexiscv/>`__  
 :Institución: Massachusetts Institute of Technology (MIT)  
@@ -22,15 +25,38 @@ Massachusetts Institute of Technology (MIT)
 
 Es un gusto poder acompañarlos en este viaje de aprendizaje hacia el dominio de PHP 8.4, una de las versiones más robustas y modernas de este lenguaje que alimenta más del 75% de los sitios web actuales.
 
-¿Qué nos hace diferentes en este curso?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Este es un curso **profesional especializado** diseñado para ahondar en conocimientos fundamentales de PHP que, lamentablemente, están siendo relegados por las metodologías de enseñanza contemporáneas. En un panorama educativo donde prima la velocidad sobre la comprensión, nuestro enfoque se distingue por privilegiar la **maestría técnica** y el **entendimiento profundo** de los principios que sustentan el desarrollo web con PHP.
+Mientras que la mayoría de cursos actuales se enfocan exclusivamente en frameworks y librerías de moda—ofreciendo soluciones rápidas pero efímeras—nosotros nos sumergiremos en los **fundamentos sólidos** que todo programador PHP profesional debe dominar para construir una carrera sólida y duradera.
+No se trata simplemente de "hacer que funcione" o seguir tutoriales paso a paso. Nuestro compromiso es que **entiendas profundamente cómo y por qué funciona** cada línea de código que escribas. Esta comprensión integral te convertirá en un desarrollador capaz de:
 
-Este es un curso **profesional especializado** diseñado para ahondar en conocimientos fundamentales de PHP que, lamentablemente, están siendo dejados de lado por las metodologías de enseñanza modernas.
+* **Diagnosticar y resolver problemas complejos** desde su raíz, no solo aplicar parches superficiales
+* **Adaptarte a cualquier framework o tecnología** porque dominas los principios subyacentes
+* **Tomar decisiones arquitectónicas informadas** basadas en conocimiento sólido, no en tendencias pasajeras
+* **Escribir código mantenible y escalable** que resista el paso del tiempo y los cambios de requisitos
 
-Profundización vs. Superficialidad
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+El Valor de los Fundamentos Olvidados
+=====================================
 
-Mientras que muchos cursos actuales se enfocan en frameworks y librerías de moda, nosotros nos sumergiremos en los **fundamentos sólidos** que todo programador PHP profesional debe dominar. No se trata solo de “hacer que funcione”, sino de **entender profundamente cómo y por qué funciona**.
+En la era de la programación "copy-paste" y las soluciones instantáneas, hemos observado una preocupante erosión en la comprensión de los fundamentos. Este curso rescata y revitaliza esos conocimientos esenciales que han sido desplazados por la presión de "ser productivo rápidamente":
+
+**Arquitectura de aplicaciones robustas**
+    Más allá de MVC básico, exploraremos patrones de diseño avanzados, principios SOLID aplicados a PHP, y técnicas de organización de código que escalan.
+
+**Gestión profunda de memoria y rendimiento**
+    Comprenderás cómo PHP maneja la memoria, cómo optimizar consultas y procesos, y cómo identificar y eliminar cuellos de botella antes de que se conviertan en problemas críticos.
+
+**Seguridad desde los cimientos**
+    No solo "usar HTTPS y validar inputs", sino entender las vulnerabilidades a nivel de protocolo, las implicaciones de cada decisión de seguridad, y cómo construir sistemas verdaderamente seguros.
+
+**Integración y comunicación avanzada**
+    Dominio completo de APIs, protocolos de comunicación, manejo de estados distribuidos, y técnicas de sincronización que van mucho más allá de simples requests HTTP.
+
+Una Experiencia de Aprendizaje Transformadora
+=============================================
+
+Este no es un curso para quienes buscan soluciones rápidas o certificaciones superficiales. Es una **inversión en tu desarrollo profesional a largo plazo**. Cada módulo está diseñado para construir sobre el anterior, creando una base de conocimiento interconectada y coherente que te acompañará durante toda tu carrera.
+
+Al finalizar este programa, no solo habrás aprendido PHP—habrás desarrollado una **mentalidad de ingeniero de software**, capaz de abordar desafíos complejos con confianza y precisión técnica que te distinguirá en cualquier equipo de desarrollo. 
 
 Comprensión Conceptual Profunda
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
