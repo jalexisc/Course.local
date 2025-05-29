@@ -29,6 +29,8 @@ if errorlevel 9009 (
 IF "%1"=="html" (
     echo Renaming _static to static...
     move "%BUILDDIR%\html\_static" "%BUILDDIR%\html\static"
+    echo Updating static links in HTML files...
+    powershell -Command "(Get-ChildItem '%BUILDDIR%\html\*.html') | ForEach-Object { $_.Readlines() | ForEach-Object { $_ -replace '_static/', 'static/' } | Set-Content $_.FullName }"
 )
 goto end
 
