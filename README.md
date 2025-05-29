@@ -59,13 +59,13 @@ Para seguir este curso, se recomienda tener:
             ```shell
             make.bat html
             ```
-    *   La documentación generada en formato HTML estará disponible en la carpeta `build/html/`. Abre `build/html/index.html` en tu navegador.
+    *   La documentación generada en formato HTML estará disponible en la carpeta `docs/html/`. Abre `docs/html/index.html` en tu navegador.
 
 ## Estructura del Proyecto
 
 *   `README.md`: Este archivo.
 *   `source/`: Contiene los archivos fuente del curso en formato reStructuredText (`.rst`), así como archivos estáticos (CSS, imágenes, JS) y scripts auxiliares de Python.
-*   `build/`: Carpeta donde se genera la documentación compilada por Sphinx (si se construye).
+*   `docs/`: Carpeta donde se genera la documentación compilada por Sphinx (si se construye).
 *   `Makefile` y `make.bat`: Scripts para automatizar tareas comunes, como la construcción de la documentación con Sphinx.
 *   `requirements.txt`: Lista las dependencias de Python necesarias para el proyecto (principalmente Sphinx y sus extensiones).
 *   `conf.py`: Archivo de configuración de Sphinx, ubicado en `source/conf.py`.
