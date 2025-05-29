@@ -3,10 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Bienvenidos al Curso de PHP 8.4
-================================
-Massachusetts Institute of Technology (MIT)
--------------------------------------------
+Bienvenidos al Curso de PHP 8.4 del Massachusetts Institute of Technology (MIT)
+===============================================================================
 
 .. image:: /static/logo-mit.png 
    :alt: Logo del Massachusetts Institute of Technology (MIT)
