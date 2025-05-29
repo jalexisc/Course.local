@@ -2,7 +2,7 @@
 Bienvenidos al Curso Completo de PHP desde Cero del Massachusetts Institute of Technology (MIT)
 ===============================================================================
 
-.. image:: /static/logo-mit.png
+.. image:: static/logo-mit.png
    :alt: Logo del Massachusetts Institute of Technology (MIT)
 
 :Profesor: **José Alexis Correa Valencia**
