@@ -6,7 +6,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Leer Archivos:
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 .. code-block:: php
 
    <?php
@@ -31,7 +31,7 @@ Leer Archivos:
    ?>
 
 Escribir Archivos:
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 .. code-block:: php
 
    <?php
@@ -53,7 +53,7 @@ Escribir Archivos:
    ?>
 
 6.2 Sistema de Registro de Usuarios
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 registro_archivo.php:
 ^^^^^^^^^^^^^^^^^^^^^

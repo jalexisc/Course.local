@@ -3,10 +3,10 @@
 ==============================
 
 5.1 Fundamentos de Formularios HTML
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Formulario Básico:
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 .. code-block:: html
 
    <!DOCTYPE html>
@@ -31,7 +31,7 @@ Formulario Básico:
    </html>
 
 5.2 Procesamiento con PHP
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Archivo procesar.php:
 ^^^^^^^^^^^^^^^^^^^^^
@@ -54,7 +54,7 @@ Archivo procesar.php:
    ?>
 
 5.3 Métodos GET y POST
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 Método GET:
 ^^^^^^^^^^^
@@ -70,7 +70,7 @@ Método GET:
    ?>
 
 Método POST (Recomendado para formularios):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: php
 
    <?php
@@ -84,10 +84,10 @@ Método POST (Recomendado para formularios):
    ?>
 
 5.4 Validación de Formularios
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Validación Básica:
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 .. code-block:: php
 
    <?php
@@ -130,10 +130,10 @@ Validación Básica:
    ?>
 
 5.5 Formulario Completo con Validación
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 registro.php:
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 .. code-block:: php
 
    <?php
@@ -248,7 +248,7 @@ registro.php:
    </html>
 
 5.6 Tipos de Input Avanzados
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: html
 
@@ -286,7 +286,7 @@ registro.php:
    </form>
 
 Ejercicios Semana 5:
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 1. **Formulario de Contacto:** Crear formulario completo con validación
 2. **Calculadora Web:** Formulario que realice operaciones matemáticas

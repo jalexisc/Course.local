@@ -15,6 +15,7 @@ Welcome to Curso PHP Completo's documentation!
    00_introduccion
    01_introduccion_programacion_php
    02_variables_tipos_datos
+   03_estructuras_control
    04_arrays_funciones
    05_manipulacion_formularios
    06_manejo_archivos_sesiones

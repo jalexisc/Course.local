@@ -4,30 +4,30 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2: Variables y Tipos de Datos &mdash; documentation de Higgs - 7.0.2</title>
-      <link rel="stylesheet" type="text/css" href="static/pygments.css?v=67a8c293" />
-      <link rel="stylesheet" type="text/css" href="static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="static/css/citheme.css" />
+  <title>2: Variables y Tipos de Datos &mdash; documentación de Higgs - 7.0.2</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=67a8c293" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/css/citheme.css" />
 
   
-    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="canonical" href="https://higgs.com.co/02_variables_tipos_datos.html" />
   <!--[if lt IE 9]>
-    <script src="static/js/html5shiv.min.js"></script>
+    <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="static/jquery.js?v=5d32c60e"></script>
-        <script src="static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="static/documentation_options.js?v=e20d7d46"></script>
-        <script src="static/doctools.js?v=888ff710"></script>
-        <script src="static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="static/translations.js?v=efdbd0b9"></script>
-        <script src="static/js/citheme.js"></script>
-        <script src="static/js/carbon.js"></script>
-    <script src="static/js/theme.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=e20d7d46"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=efdbd0b9"></script>
+        <script src="_static/js/citheme.js"></script>
+        <script src="_static/js/carbon.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="MÓDULO 4: Arrays y Funciones" href="04_arrays_funciones.html" />
+    <link rel="next" title="3: Estructuras de Control" href="03_estructuras_control.html" />
     <link rel="prev" title="1.4 Tu Primer Script PHP: «Hola, Mundo»" href="01_4_primer_script_php.html" /> 
 </head>
 
@@ -41,7 +41,7 @@
           
           <a href="index.html">
             
-              <img src="static/logo.svg" class="logo" alt="Logotipo"/>
+              <img src="_static/logo.svg" class="logo" alt="Logotipo"/>
           </a>
               <div class="version">
                 7.0
@@ -89,28 +89,50 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">2: Variables y Tipos de Datos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#semana-2-trabajando-con-datos">Semana 2: Trabajando con Datos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#variables-en-php">2.1 Variables en PHP</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#reglas-para-variables">Reglas para Variables:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables-en-php">2.1 Variables en PHP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reglas-para-variables">Reglas para Variables:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#tipos-de-datos">2.2 Tipos de Datos</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tipos-primitivos">Tipos Primitivos:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-datos">2.2 Tipos de Datos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tipos-primitivos">Tipos Primitivos:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#operaciones-con-variables">2.3 Operaciones con Variables</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#concatenacion-de-strings">Concatenación de Strings:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#interpolacion-de-variables">Interpolación de Variables:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operaciones-con-variables">2.3 Operaciones con Variables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#concatenacion-de-strings">Concatenación de Strings:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interpolacion-de-variables">Interpolación de Variables:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#constantes">2.4 Constantes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#conversion-de-tipos">2.5 Conversión de Tipos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ejercicios-semana-2">Ejercicios Semana 2:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#constantes">2.4 Constantes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conversion-de-tipos">2.5 Conversión de Tipos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ejercicios-semana-2">Ejercicios Semana 2:</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="03_estructuras_control.html">3: Estructuras de Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_estructuras_control.html#estructuras-condicionales">3.1 Estructuras Condicionales</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_estructuras_control.html#if-simple">If Simple:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_estructuras_control.html#if-else">If-Else:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_estructuras_control.html#if-elseif-else">If-ElseIf-Else:</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="04_arrays_funciones.html">MÓDULO 4: Arrays y Funciones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_estructuras_control.html#operadores-de-comparacion">3.2 Operadores de Comparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_estructuras_control.html#id1">3.1 Estructuras Condicionales</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_estructuras_control.html#id2">If Simple:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_estructuras_control.html#id3">If-Else:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_estructuras_control.html#id4">If-ElseIf-Else:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_estructuras_control.html#id5">3.2 Operadores de Comparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_estructuras_control.html#operadores-logicos">3.3 Operadores Lógicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_estructuras_control.html#switch">3.4 Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_estructuras_control.html#bucles-loops">3.5 Bucles (Loops)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_estructuras_control.html#while">While:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_estructuras_control.html#for">For:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_estructuras_control.html#ejercicios-semana-3">Ejercicios Semana 3:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_arrays_funciones.html">4: Arrays y Funciones</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#arrays-arreglos">4.1 Arrays (Arreglos)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#arrays-indexados">Arrays Indexados:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="04_arrays_funciones.html#arrays-asociativos">Arrays Asociativos:</a></li>
@@ -134,51 +156,45 @@
 <li class="toctree-l2"><a class="reference internal" href="04_arrays_funciones.html#ejercicios-semana-4">Ejercicios Semana 4:</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="05_manipulacion_formularios.html">MÓDULO 5: Manipulación de Formularios</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#semana-5-interaccion-con-el-usuario">Semana 5: Interacción con el Usuario</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#fundamentos-de-formularios-html">5.1 Fundamentos de Formularios HTML</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#formulario-basico">Formulario Básico:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_manipulacion_formularios.html">5: Manipulación de Formularios</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#fundamentos-de-formularios-html">5.1 Fundamentos de Formularios HTML</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#formulario-basico">Formulario Básico:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#procesamiento-con-php">5.2 Procesamiento con PHP</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#archivo-procesar-php">Archivo procesar.php:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#procesamiento-con-php">5.2 Procesamiento con PHP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#archivo-procesar-php">Archivo procesar.php:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#metodos-get-y-post">5.3 Métodos GET y POST</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#metodo-get">Método GET:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#metodo-post-recomendado-para-formularios">Método POST (Recomendado para formularios):</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#metodos-get-y-post">5.3 Métodos GET y POST</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#metodo-get">Método GET:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#metodo-post-recomendado-para-formularios">Método POST (Recomendado para formularios):</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#validacion-de-formularios">5.4 Validación de Formularios</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#validacion-basica">Validación Básica:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#validacion-de-formularios">5.4 Validación de Formularios</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#validacion-basica">Validación Básica:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#formulario-completo-con-validacion">5.5 Formulario Completo con Validación</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="05_manipulacion_formularios.html#registro-php">registro.php:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#formulario-completo-con-validacion">5.5 Formulario Completo con Validación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#registro-php">registro.php:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#tipos-de-input-avanzados">5.6 Tipos de Input Avanzados</a></li>
-<li class="toctree-l3"><a class="reference internal" href="05_manipulacion_formularios.html#ejercicios-semana-5">Ejercicios Semana 5:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#tipos-de-input-avanzados">5.6 Tipos de Input Avanzados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_manipulacion_formularios.html#ejercicios-semana-5">Ejercicios Semana 5:</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="06_manejo_archivos_sesiones.html">6: Manejo de Archivos y Sesiones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="06_manejo_archivos_sesiones.html#manipulacion-de-archivos">6.1 Manipulación de Archivos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#leer-archivos">Leer Archivos:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#escribir-archivos">Escribir Archivos:</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="06_manejo_archivos_sesiones.html">MÓDULO 6: Manejo de Archivos y Sesiones</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="06_manejo_archivos_sesiones.html#semana-6-persistencia-de-datos">Semana 6: Persistencia de Datos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#manipulacion-de-archivos">6.1 Manipulación de Archivos</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="06_manejo_archivos_sesiones.html#leer-archivos">Leer Archivos:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="06_manejo_archivos_sesiones.html#escribir-archivos">Escribir Archivos:</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#sistema-de-registro-de-usuarios">6.2 Sistema de Registro de Usuarios</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="06_manejo_archivos_sesiones.html#registro-archivo-php">registro_archivo.php:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_manejo_archivos_sesiones.html#sistema-de-registro-de-usuarios">6.2 Sistema de Registro de Usuarios</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_manejo_archivos_sesiones.html#registro-archivo-php">registro_archivo.php:</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="07_entornos_pruebas.html">Capítulo 7: Entornos de Pruebas</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="07_entornos_pruebas.html">7: Entornos de Pruebas</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="07_entornos_pruebas.html#que-es-un-entorno-de-pruebas">¿Qué es un Entorno de Pruebas?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="07_entornos_pruebas.html#caracteristicas-clave-de-un-buen-entorno-de-pruebas">Características Clave de un Buen Entorno de Pruebas:</a></li>
 </ul>
@@ -224,10 +240,8 @@
              
   <section id="variables-y-tipos-de-datos">
 <h1>2: Variables y Tipos de Datos<a class="headerlink" href="#variables-y-tipos-de-datos" title="Link to this heading"></a></h1>
-<section id="semana-2-trabajando-con-datos">
-<h2>Semana 2: Trabajando con Datos<a class="headerlink" href="#semana-2-trabajando-con-datos" title="Link to this heading"></a></h2>
 <section id="variables-en-php">
-<h3>2.1 Variables en PHP<a class="headerlink" href="#variables-en-php" title="Link to this heading"></a></h3>
+<h2>2.1 Variables en PHP<a class="headerlink" href="#variables-en-php" title="Link to this heading"></a></h2>
 <p>Las variables son contenedores que almacenan datos. En PHP, las variables comienzan con el símbolo <code class="docutils literal notranslate"><span class="pre">$</span></code>.</p>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="s2">&quot;Juan&quot;</span><span class="p">;</span>
@@ -238,7 +252,7 @@
 </pre></div>
 </div>
 <section id="reglas-para-variables">
-<h4>Reglas para Variables:<a class="headerlink" href="#reglas-para-variables" title="Link to this heading"></a></h4>
+<h3>Reglas para Variables:<a class="headerlink" href="#reglas-para-variables" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Comienzan con <code class="docutils literal notranslate"><span class="pre">$</span></code> seguido de una letra o guión bajo</p></li>
 <li><p>Pueden contener letras, números y guiones bajos</p></li>
@@ -248,9 +262,9 @@
 </section>
 </section>
 <section id="tipos-de-datos">
-<h3>2.2 Tipos de Datos<a class="headerlink" href="#tipos-de-datos" title="Link to this heading"></a></h3>
+<h2>2.2 Tipos de Datos<a class="headerlink" href="#tipos-de-datos" title="Link to this heading"></a></h2>
 <section id="tipos-primitivos">
-<h4>Tipos Primitivos:<a class="headerlink" href="#tipos-primitivos" title="Link to this heading"></a></h4>
+<h3>Tipos Primitivos:<a class="headerlink" href="#tipos-primitivos" title="Link to this heading"></a></h3>
 <p><strong>String (Cadena de texto):</strong></p>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="s2">&quot;María García&quot;</span><span class="p">;</span>
@@ -286,9 +300,9 @@
 </section>
 </section>
 <section id="operaciones-con-variables">
-<h3>2.3 Operaciones con Variables<a class="headerlink" href="#operaciones-con-variables" title="Link to this heading"></a></h3>
+<h2>2.3 Operaciones con Variables<a class="headerlink" href="#operaciones-con-variables" title="Link to this heading"></a></h2>
 <section id="concatenacion-de-strings">
-<h4>Concatenación de Strings:<a class="headerlink" href="#concatenacion-de-strings" title="Link to this heading"></a></h4>
+<h3>Concatenación de Strings:<a class="headerlink" href="#concatenacion-de-strings" title="Link to this heading"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="s2">&quot;Ana&quot;</span><span class="p">;</span>
 <span class="nv">$apellido</span> <span class="o">=</span> <span class="s2">&quot;López&quot;</span><span class="p">;</span>
@@ -299,7 +313,7 @@
 </div>
 </section>
 <section id="interpolacion-de-variables">
-<h4>Interpolación de Variables:<a class="headerlink" href="#interpolacion-de-variables" title="Link to this heading"></a></h4>
+<h3>Interpolación de Variables:<a class="headerlink" href="#interpolacion-de-variables" title="Link to this heading"></a></h3>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$producto</span> <span class="o">=</span> <span class="s2">&quot;Laptop&quot;</span><span class="p">;</span>
 <span class="nv">$precio</span> <span class="o">=</span> <span class="mf">899.99</span><span class="p">;</span>
@@ -310,7 +324,7 @@
 </section>
 </section>
 <section id="constantes">
-<h3>2.4 Constantes<a class="headerlink" href="#constantes" title="Link to this heading"></a></h3>
+<h2>2.4 Constantes<a class="headerlink" href="#constantes" title="Link to this heading"></a></h2>
 <p>Las constantes son valores que no cambian durante la ejecución:</p>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nb">define</span><span class="p">(</span><span class="s2">&quot;SITIO_NOMBRE&quot;</span><span class="p">,</span> <span class="s2">&quot;Mi Blog Personal&quot;</span><span class="p">);</span>
@@ -324,7 +338,7 @@
 </div>
 </section>
 <section id="conversion-de-tipos">
-<h3>2.5 Conversión de Tipos<a class="headerlink" href="#conversion-de-tipos" title="Link to this heading"></a></h3>
+<h2>2.5 Conversión de Tipos<a class="headerlink" href="#conversion-de-tipos" title="Link to this heading"></a></h2>
 <div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$numero_texto</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span><span class="p">;</span>
 <span class="nv">$numero_entero</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$numero_texto</span><span class="p">;</span>
@@ -339,13 +353,12 @@
 </div>
 </section>
 <section id="ejercicios-semana-2">
-<h3>Ejercicios Semana 2:<a class="headerlink" href="#ejercicios-semana-2" title="Link to this heading"></a></h3>
+<h2>Ejercicios Semana 2:<a class="headerlink" href="#ejercicios-semana-2" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p><strong>Calculadora Básica:</strong> Crear variables para dos números y mostrar suma, resta, multiplicación y división</p></li>
 <li><p><strong>Información Personal:</strong> Crear un perfil con nombre, edad, ciudad y mostrar en formato organizado</p></li>
 <li><p><strong>Conversiones:</strong> Practicar conversión entre diferentes tipos de datos</p></li>
 </ol>
-</section>
 </section>
 </section>
 
@@ -354,14 +367,14 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
         <a href="01_4_primer_script_php.html" class="btn btn-neutral float-left" title="1.4 Tu Primer Script PHP: «Hola, Mundo»" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="04_arrays_funciones.html" class="btn btn-neutral float-right" title="MÓDULO 4: Arrays y Funciones" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="03_estructuras_control.html" class="btn btn-neutral float-right" title="3: Estructuras de Control" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Derechos de autor 2012-2025 Jose Alexis Correa Valencia.
-      <span class="lastupdated">Actualizado por última vez en may 27, 2025.
+      <span class="lastupdated">Actualizado por última vez en may 29, 2025.
       </span></p>
   </div>
 

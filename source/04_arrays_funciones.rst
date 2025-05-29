@@ -107,7 +107,7 @@ Recorrer Arrays:
    ?>
 
 4.3 Funciones Útiles para Arrays
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
 
@@ -136,7 +136,7 @@ Recorrer Arrays:
    ?>
 
 4.4 Funciones Definidas por el Usuario
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Función Básica:
 ^^^^^^^^^^^^^^^
@@ -209,7 +209,7 @@ Funciones con Arrays:
    ?>
 
 4.5 Alcance de Variables (Scope)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: php
 
@@ -229,7 +229,7 @@ Funciones con Arrays:
    ?>
 
 Ejercicios Semana 4:
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 1. **Gestión de Estudiantes:** Crear array de estudiantes con calificaciones y calcular promedios
 2. **Inventario Simple:** Sistema para agregar, eliminar y buscar productos

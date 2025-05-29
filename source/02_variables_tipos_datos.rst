@@ -2,9 +2,6 @@
 2: Variables y Tipos de Datos
 =====================================
 
-Semana 2: Trabajando con Datos
-------------------------------
-
 2.1 Variables en PHP
 ~~~~~~~~~~~~~~~~~~~~
 
