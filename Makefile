@@ -18,3 +18,7 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+ifeq ($@, html)
+	@echo "Renaming _static to static..."
+	@move "$(BUILDDIR)/html/_static" "$(BUILDDIR)/html/static"
+endif

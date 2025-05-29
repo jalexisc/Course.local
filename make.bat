@@ -26,6 +26,10 @@ if errorlevel 9009 (
 )
 
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+IF "%1"=="html" (
+    echo Renaming _static to static...
+    move "%BUILDDIR%\html\_static" "%BUILDDIR%\html\static"
+)
 goto end
 
 :help
