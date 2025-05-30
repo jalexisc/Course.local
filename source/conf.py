@@ -85,7 +85,7 @@ html_context = {
 html_theme_options = {
 	'collapse_navigation': False,
 	'sticky_navigation': False,
-	'navigation_depth': 4,
+	'navigation_depth': 1,
 	'includehidden': False,
 	'logo_only': True,
 	'display_version': True,

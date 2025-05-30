@@ -1,6 +1,6 @@
-===============================================================================
+================================================================================================================
 Bienvenidos al Curso Completo de PHP desde Cero del Massachusetts Institute of Technology (MIT)
-===============================================================================
+================================================================================================================
 
 .. raw:: html
 
@@ -12,7 +12,7 @@ Bienvenidos al Curso Completo de PHP desde Cero del Massachusetts Institute of T
 :Fecha: Mayo 2025
 
 ¡Estimados estudiantes, bienvenidos a este viaje de aprendizaje!
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Este curso te guiará paso a paso, partiendo desde cero, hasta que domines los fundamentos de la programación y seas capaz de desarrollar aplicaciones web básicas con PHP 8.4. En un entorno donde la enseñanza suele priorizar la rapidez sobre la profundidad, hemos creado un programa profesional especializado que retoma los conocimientos esenciales de PHP, muchas veces dejados de lado por las metodologías contemporáneas. Aquí no solo aprenderás a escribir código: construiremos juntos una base sólida que sustente tu crecimiento como desarrollador web, enfatizando la maestría técnica y el entendimiento profundo de los principios que hacen de PHP una herramienta poderosa para proyectos reales.
 
@@ -34,20 +34,17 @@ Para seguir este curso, necesitarás instalar:
 4. Un navegador web
 
 Recursos de Apoyo
-----------------
+------------------
 
 - Repositorio del curso en GitHub (se compartirá en la primera clase)
 - Documentación oficial de PHP
 
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 1
    :caption: Contenido:
 
    00_informacion_curso
-   00_objetivos_curso
-   00_metodologia
-   00_historia_php
    01_introduccion_programacion_php
    02_variables_tipos_datos
    03_estructuras_control

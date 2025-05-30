@@ -28,9 +28,16 @@ if errorlevel 9009 (
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 IF "%1"=="html" (
     echo Renaming _static to static...
-    move "%BUILDDIR%\html\_static" "%BUILDDIR%\html\static"
+    IF EXIST "%BUILDDIR%\_static" (
+        move "%BUILDDIR%\_static" "%BUILDDIR%\static"
+    ) ELSE IF EXIST "%BUILDDIR%\html\_static" (
+        move "%BUILDDIR%\html\_static" "%BUILDDIR%\html\static"
+    )
     echo Updating static links in HTML files...
-    powershell -Command "(Get-ChildItem '%BUILDDIR%\html\*.html') | ForEach-Object { $_.Readlines() | ForEach-Object { $_ -replace '_static/', 'static/' } | Set-Content $_.FullName }"
+    powershell -Command "(Get-ChildItem '%BUILDDIR%\*.html') | ForEach-Object { $content = Get-Content $_.FullName -Raw; $content = $content -replace '_static/', 'static/'; Set-Content -Path $_.FullName -Value $content }"
+    IF EXIST "%BUILDDIR%\html" (
+        powershell -Command "(Get-ChildItem '%BUILDDIR%\html\*.html') | ForEach-Object { $content = Get-Content $_.FullName -Raw; $content = $content -replace '_static/', 'static/'; Set-Content -Path $_.FullName -Value $content }"
+    )
 )
 goto end
 
