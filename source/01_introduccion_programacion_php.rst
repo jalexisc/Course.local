@@ -1,6 +1,6 @@
-==============================================
-1: Introducción a la Programación y PHP
-==============================================
+===============
+1: Introducción
+===============
 
 Este módulo sienta las bases de la programación y te introduce al lenguaje PHP, preparándote para construir tus primeras aplicaciones web dinámicas.
 
